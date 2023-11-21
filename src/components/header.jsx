@@ -1,13 +1,25 @@
 import Home from "../pages/home"
-import PageTitle from "./page-title"
+import TopTweet from "../icones/Butons/Icons/Timeline-Prop.png"
+
+function PageTitle() {
+    return (
+        <h1  className= "page-title">Home</h1>
+    )
+}
+
+function TopTweets(){
+    return (
+        <img className="top-tweet" src={TopTweet} alt="" />
+        )
+}
 
 function Header(){
-    return <>
+    return (
             <header  className= "header">
-                <PageTitle>Home</PageTitle>
+                <PageTitle />
+                <TopTweets />
             </header>
-        </>
-
+    )
 }
 
 export default Header
