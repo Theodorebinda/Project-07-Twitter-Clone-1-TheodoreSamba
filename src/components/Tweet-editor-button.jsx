@@ -1,11 +1,11 @@
-import emoji from "../icones/Butons/Icons/Emoji.jpg"
-import schedule from "../icones/Butons/Icons/Schedule.jpg"
-import poll from "../icones/Butons/Icons/Poll.jpg"
-import media from "../icones/Butons/Icons/Media.png"
-import group from "../icones/Butons/Icons/Group.png"
+import emoji from "../icones/icones/Emoji.png"
+import schedule from "../icones/icones/Schedule.png"
+import gif from "../icones/icones/Gif.png"
+import poll from "../icones/icones/Poll.png"
+import media from "../icones/icones/img.png"
 
 function TweetEditorAction(){
-    const butonMetas =[emoji,schedule,poll,media,group];
+    const butonMetas =[media,gif,poll,emoji,schedule];
     return (
         <div className="tweet-editor-actions">
         {butonMetas.map((butonMeta) =>  <button>
@@ -18,10 +18,21 @@ function TweetEditorAction(){
 
 function Buton(){
     return (
-       <div className="tweet-editor-buttons">
-          <TweetEditorAction />
-       </div>
+      <>
+         <button className="button">Tweet
+         </button>
+      </>
     )
+    
 }
-export default Buton
+
+function TweetEditorButton(){
+  return (
+    <div className="tweet-editor-buttons">
+      <TweetEditorAction />
+      <Buton />
+    </div>
+  )
+}
+export default TweetEditorButton
 

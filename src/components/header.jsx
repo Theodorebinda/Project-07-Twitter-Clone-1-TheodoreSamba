@@ -1,5 +1,4 @@
-import Home from "../pages/home"
-import TopTweet from "../icones/Butons/Icons/Timeline-Prop.png"
+import TopTweet from "../icones/icones/Timeline-Prop.png"
 
 function PageTitle() {
     return (
