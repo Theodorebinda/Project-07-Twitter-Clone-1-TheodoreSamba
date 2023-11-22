@@ -1,4 +1,6 @@
-import avatar from "../images/profile-photo.png"
+import avatar from "../images/profile-photo.png";
+import TweetEditorInput from "../components/Tweet-editor-input";
+import TweetEditorButton from "../components/Tweet-editor-button"
 
 let user ={
   name : "Bradley Ortiz",
@@ -20,10 +22,12 @@ function Profile(){
 
 function TweetEditForm(){
   return(
-    <>
-      <div className="tweet-editor-form"></div>
-      <Profile />
-    </>
+      <div className="tweet-editor-form">
+         <TweetEditorInput />
+         <TweetEditorButton />
+      </div>
+      
+
 
   )
 }
@@ -32,8 +36,12 @@ function TweetEditForm(){
 function TweetteEditor(){
     return (
         <>
-          <div className="tweet-editor"></div>
+          <div className="tweet-editor">
+          <Profile />
           <TweetEditForm />
+          </div>
+         
+         
         </>
     )
 }
