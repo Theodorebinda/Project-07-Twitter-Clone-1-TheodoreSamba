@@ -97,7 +97,7 @@ const tweets = [
     isCertified : certified,
     autorDetails : "@twitter. Oct 29",
     tweetAvatar : profilTweet,
-    text : "BIG New lol jk still Twitter",
+    text : "hello literally everyone",
     image : null,
     actions:
     [
