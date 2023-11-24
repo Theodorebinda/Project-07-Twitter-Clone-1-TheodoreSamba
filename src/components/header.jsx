@@ -2,7 +2,7 @@ import TopTweet from "../icones/icones/Timeline-Prop.png"
 
 function PageTitle() {
     return (
-        <h1  className= "page-title">Home</h1>
+        <h1><a href="#" className="page-title">Home</a></h1>
     )
 }
 
