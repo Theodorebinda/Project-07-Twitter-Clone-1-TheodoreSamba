@@ -1,5 +1,4 @@
 import React from 'react';
-import TweetteEditor from "../components/Tweette-editor"
 
 function TweetEditorInput(){
   return (

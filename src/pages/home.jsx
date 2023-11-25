@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
 import TweetteEditor from '../components/Tweette-editor';
-import Tweet from '../components/Tweets';
+import Tweet from '../components/Tweet';
 
 function Home() {
   return (

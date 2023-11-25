@@ -1,16 +1,5 @@
-import TopTweet from "../icones/icones/Timeline-Prop.png"
-
-function PageTitle() {
-    return (
-        <h1><a href="#" className="page-title">Home</a></h1>
-    )
-}
-
-function TopTweets(){
-    return (
-        <img className="top-tweet" src={TopTweet} alt="" />
-        )
-}
+import TopTweets from "../components/topTweet"
+import PageTitle from "../components/pageTitre"
 
 function Header(){
     return (
