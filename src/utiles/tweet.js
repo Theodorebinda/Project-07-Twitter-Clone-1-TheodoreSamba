@@ -21,22 +21,18 @@ const tweets = [
       actions:
      [
         {   
-            id:1,
             label:comment,
             nbre: 123
          },
          {
-            id:2,
             label:retweet,
             nbre: 234
          },
          {
-            id:3,
             label:reaction,
             nbre:315
          },
          {
-            id:4,
             label:share,
             nbre:false
          }
@@ -54,22 +50,18 @@ const tweets = [
       actions:
         [
             {
-               id:1,
                label:comment,
                nbre: 19
              },
              {
-               id:2,
                label:retweet,
                nbre: 48
              },
              {
-               id:3,
                label:reaction,
                nbre:482
              },
              {
-               id:4,
                label:share,
                nbre:false
              }
@@ -86,22 +78,18 @@ const tweets = [
       actions:
         [
          {
-            id:1,
             label:comment,
-            nbre: 19
+            nbre: "6.8K"
           },
           {
-            id:2,
             label:retweet,
-            nbre: 48
+            nbre: "36.6K"
           },
           {
-            id:3,
             label:reaction,
-            nbre:482
+            nbre:"267.1K"
           },
           {
-            id:4,
              label:share,
              nbre:false
           }
@@ -119,22 +107,18 @@ const tweets = [
    
       [
          {
-            id:1,
             label:comment,
-            nbre: 19
+            nbre: "118.7K"
           },
           {
-            id:2,
             label:retweet,
-            nbre: 48
+            nbre: "785.4K"
           },
           {
-            id:3,
             label:reaction,
-            nbre:482
+            nbre:"3.3M"
           },
           {
-            id:4,
              label:share,
              nbre:false
           }
@@ -152,22 +136,18 @@ const tweets = [
 
    [
       {
-         id:1,
          label:comment,
-         nbre: 19
+         nbre: 12
        },
        {
-         id:2,
          label:retweet,
          nbre: 48
        },
        {
-         id:3,
          label:reaction,
-         nbre:482
+         nbre:100
        },
        {
-         id:4,
           label:share,
           nbre:false
        }
