@@ -1,5 +1,5 @@
 import avatar from "../images/profile-photo.png";
-
+// composant qui gere le profil d'utilisateur dans le tweet editor
 function Profile(){
     let user ={
       name : "Bradley Ortiz",

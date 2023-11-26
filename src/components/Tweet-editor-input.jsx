@@ -1,5 +1,5 @@
 import React from 'react';
-
+// Composant qui gere l'entre du tweet de l'utilisateur
 function TweetEditorInput(){
   return (
     < >
