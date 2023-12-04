@@ -32,6 +32,7 @@ body{
 .top-tweets {
     width: 1.5rem;
     height: auto;
+    opacity: 1;
 }
 
 .page-title {
