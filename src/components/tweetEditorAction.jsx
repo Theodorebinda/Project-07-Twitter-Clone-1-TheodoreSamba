@@ -8,8 +8,8 @@ function TweetEditorAction(){
     const butonMetas =[media,gif,poll,emoji,schedule];
         return (
             <div className="tweet-editor-actions">
-            {butonMetas.map((butonMeta) =>  <button >
-                <img src={butonMeta} alt="" />
+            {butonMetas.map((butonMeta, index) =>  <button >
+                <img key={index} src={butonMeta} alt="" />
             </button>)}
            
             </div>

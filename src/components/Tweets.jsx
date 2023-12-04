@@ -11,7 +11,7 @@ function Tweets (){
                 <div className="tweet-body">
                     <div className="tweet-title">
                         <h4 ><a className="tweet-title-author" href="#">{tweet.autor}</a></h4> 
-                        <img  src={tweet.isCertified?tweet.isCertified:null } alt="" />
+                        {tweet.isCertified && <img  src={tweet.isCertified } alt="" />}
                         <p ><a className="tweet-title-details" href="#" >{tweet.autorDetails}</a></p>
                     </div>
                     <div className="tweet-text">

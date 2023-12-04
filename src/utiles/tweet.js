@@ -11,7 +11,7 @@ import profilKadea from "../images/KadeaProfif.jpg";
 import contentKadea from "../images/imagePubliKadea.jpeg"
 
 const tweets = [
-    { id : 1,
+    { id : 0,
       autor : "CNN",
       isCertified : certified,
       autorDetails : "@CNN. 7m",
@@ -40,7 +40,7 @@ const tweets = [
      
     
     },
-    { id : 2,
+    { id : 1,
       autor : "The New York Times",
       isCertified : certified,
       autorDetails : "@nytimes. 2h",
@@ -68,7 +68,7 @@ const tweets = [
             ]
          
     },
-    { id : 3,
+    { id : 2,
       autor : "Twitter",
       isCertified : certified,
       autorDetails : "@twitter. Oct 29",
@@ -96,7 +96,7 @@ const tweets = [
          ]
      
     },
-   {  id : 4,
+   {  id : 3,
       autor : "Twitter",
       isCertified : certified,
       autorDetails : "@twitter. Oct 29",
@@ -125,7 +125,7 @@ const tweets = [
          ]
  
 },
-{  id : 5,
+{  id : 4,
    autor : "KadeaAcademy",
    isCertified : false,
    autorDetails : "@Kda243",
