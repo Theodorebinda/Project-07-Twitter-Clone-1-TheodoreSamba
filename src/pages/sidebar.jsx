@@ -1,6 +1,6 @@
 function Sidebar(){
     return (
-        <h1>Sidebar</h1>
+        <h1 className="page-title" >Sidebar</h1>
     )
 }
 
