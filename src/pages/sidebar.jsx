@@ -6,9 +6,11 @@ import SidbarBottom from "../components/sidebarBottom";
 
 function Sidebar(){
     return (
-        <div className="sidebar">
+        <div className="contenair-sidebar">
+            <div className="sidebar">
            <SidebarTop/>
            <SidbarBottom />
+           </div>
         </div>
     )
 }

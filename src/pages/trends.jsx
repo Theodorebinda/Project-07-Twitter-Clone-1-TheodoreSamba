@@ -1,6 +1,8 @@
+import Trend from "../components/Trend"
+
 function Trends (){
     return (
-        <h1>Trends</h1>
+        <Trend />
     )
 }
 export default Trends
