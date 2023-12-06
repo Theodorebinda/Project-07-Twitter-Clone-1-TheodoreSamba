@@ -257,12 +257,15 @@ a {
     justify-content: center;
     gap: 20px;
 }
-
-.tread-search{
+.tread-contenair{
     display: flex;
-    /* width: 350px; */
+    width: 100%;
+
+
+}
+.tread-search{
     height: 42px;
-    padding-right: 181px;
+    padding-right: 10%;
     align-items: flex-start;
     flex-shrink: 0;
     background-color: #2F3336;

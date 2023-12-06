@@ -1,7 +1,8 @@
 function Trend(){
     return (
-        
-        <input className="tread-search" type="search" placeholder="Search Twitter"/>
+        <div className="tread-contenair">
+            <input className="tread-search" type="search" placeholder="Search Twitter"/>
+        </div>
     )
 }
 
