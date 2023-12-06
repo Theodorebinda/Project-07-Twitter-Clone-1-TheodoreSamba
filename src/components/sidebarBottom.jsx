@@ -1,10 +1,12 @@
-import Profile from "../components/profil"
+import user from "../utiles/user"
+
+
 function SidbarBottom (){
-    return(
-        <>
-        <img 
-          className="avatar"
-          src={Profile.userImage}
-          />
-        </>
-}
+    return (
+        <div className="sidebar-botom">
+           <img className="user-sidebar" src={user.userImage} alt="" />
+           <h4 ><a className="tweet-title-author" href="#">{user.name}</a></h4>
+           <p ><a className="tweet-title-details" href="#" >{user.userName}</a></p>
+        </div>
+)}
+export default SidbarBottom

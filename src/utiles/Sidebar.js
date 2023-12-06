@@ -17,38 +17,38 @@ const sidebars = [
 
     },
     {
-        name:"home",
+        name:"Home",
         icone: home
     },
     {
-        name:"hashtag",
+        name:"Hashtag",
         icone: hashtag
     },
     {
-        name:"notification",
+        name:"Notification",
         icone: notification
 
     },
     {
-        name:"message",
+        name:"Message",
         icone:message
 
     },
     {
-        name:"bookmark",
+        name:"Bookmark",
         icone:bookmark
 
     },
     {
-        name:"list",
+        name:"Liste",
         icone:list
     },
     {
-        name:"user",
+        name:"Profil",
         icone:user
     },
     {
-        name:"more",
+        name:"More",
         icone:more
     }
 ]
