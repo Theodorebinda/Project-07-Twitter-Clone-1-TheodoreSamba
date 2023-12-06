@@ -1,6 +1,12 @@
+import SidebarTop from "../components/SidbarTop"
+
+
+
 function Sidebar(){
     return (
-        <h1 className="page-title" >Sidebar</h1>
+        <div className="sidebar">
+           <SidebarTop/>
+        </div>
     )
 }
 

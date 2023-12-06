@@ -1,5 +1,6 @@
 // composant qui gere le btn Tweet
-function Buton(){
+function Buton(props){
+  const {style} = (props);
     return (
       <>
          <button className="button">Tweet

@@ -14,13 +14,49 @@ body{
     justify-content: space-between;
 }
 
+.sidebar{
+    font-family: 'Inter', sans-serif;
+    padding: 2.5rem 1rem;
+}
+
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color : white;
+}
+.link{
+    display: flex;
+    align-items:start;
+    gap: 8px;
+}
+.link-nav img {
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+.nav-sidebar {
+    display: inline-flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 20px;
+    background-color: black;
+}
+.left-sidebar {
+    flex-shrink: 0;
+}
+.nav-button{
+    padding-top: 20px;
+}
+
 .timeline {
     flex: 0 0 800px;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
 }
-
 .header {
     padding: 1.5rem 1rem;
     display: flex;
@@ -32,7 +68,7 @@ body{
 .top-tweets {
     width: 1.5rem;
     height: auto;
-    opacity: 1;
+    opacity: 0;
 }
 
 .page-title {
