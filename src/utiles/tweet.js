@@ -39,8 +39,6 @@ const tweets = [
           nbre: false
         }
       ]
-
-
   },
   {
     id: 2,
