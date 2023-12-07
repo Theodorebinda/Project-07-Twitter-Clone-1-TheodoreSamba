@@ -66,6 +66,7 @@ a {
     height: 40px;
     flex-shrink: 0;
 }
+
 .sidebar-title-details{
     color: #6E767D;
     text-decoration: none;
@@ -269,4 +270,8 @@ a {
     align-items: flex-start;
     flex-shrink: 0;
     background-color: #2F3336;
+}
+
+.loock{
+    margin-left: 100px;
 }
