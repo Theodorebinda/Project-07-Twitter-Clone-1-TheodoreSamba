@@ -16,6 +16,7 @@ body{
 
 .contenair-sidebar{
     display: flex;
+    flex: 0 250px 250px;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
     height: 100%;
@@ -258,20 +259,70 @@ a {
     justify-content: center;
     gap: 20px;
 }
-.tread-contenair{
+.trend {
+    display: flex;
+    flex-direction: column;
+    flex : 0 360px 360px;
+    font-family: 'Inter', sans-serif;
+    gap: 10px;
+}
+.search-contenair{
     display: flex;
     width: 100%;
 
 
 }
-.tread-search{
-    height: 42px;
+.search{
+    /* height: 42px;
     padding-right: 10%;
     align-items: flex-start;
     flex-shrink: 0;
+    background-color: #2F3336; */
+    display: flex;
+    justify-content: space-evenly;
     background-color: #2F3336;
+    border-radius: 20px;
+    padding: 8px;
+    width: 100%;
 }
 
-.loock{
+/* .loock{
     margin-left: 100px;
+} */
+.trend-contenair{
+    background-color: #2F3336;
+    height: 426px;
+    border-radius: 15px;
+    
+}
+
+
+
+.follow-contenair{
+    display: flex;
+    flex-direction: column;
+    background-color: #2F3336;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.follow-label {
+    display: flex;
+    
+}
+.follow-avatar {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+.follow-detail {
+    flex-direction: column;
+
+}
+.certified-icone{
+    height: 20px;
+    width: 20px;
+    flex-shrink: 0;
+
 }
