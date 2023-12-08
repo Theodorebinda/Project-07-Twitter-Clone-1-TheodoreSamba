@@ -56,6 +56,16 @@ a {
     padding-top: 20px;
     width: 225px;
 }
+.button-sidebar{
+    text-transform: capitalize;
+    padding: .7rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #1D9BF0;
+    color: white;
+    font-size: 1rem;
+    width: 150px;
+}
 .sidebar-title{
     flex-direction: column;
 }
@@ -339,15 +349,20 @@ a {
 }
 .follow-content {
     display: flex;
-    padding:10px 16px 10px 16px;
-    
+    /* justify-content: space-between; */
+    padding:10px 16px 10px 16px;   
 }
+/* .label-contenair{
+    display: flex;
+    justify-content: space-between;
+
+} */
 
 .follow-label {
     display: flex;
     justify-content: space-between;
     padding: 0 5px; 
-
+    /* flex-direction: column; */
 }
 .follow-avatar {
     width: 40px;
@@ -356,7 +371,6 @@ a {
 }
 .follow-detail {
     display: flex;
-    flex-direction: column;
     color: #6E767D;
 }
 .certified-icone{
@@ -373,3 +387,4 @@ a {
     color: black;
     font-size: 1rem;
 }
+

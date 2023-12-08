@@ -1,5 +1,5 @@
 import sidebars from "../utiles/Sidebar";
-import Buton from "./tweetButon";
+import Button from "./Button";
 
 // fonction qui gere la navigation dans sidebar
 function SidebarTop(){
@@ -17,7 +17,7 @@ function SidebarTop(){
                 {navSidebar}
             </ul>
             <div className="nav-button"> 
-                <Buton />
+            <Button  className="button-sidebar"  label="Tweet" />
             </div>
            
         </div>
