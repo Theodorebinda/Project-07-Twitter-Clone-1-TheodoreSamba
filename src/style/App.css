@@ -9,19 +9,20 @@ body{
 }
 
 #root{
-    width: 100%;
+    /* max-width:100%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contenair-sidebar{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     font-family: 'Inter', sans-serif;
     height: 100%;
     position: sticky;
     padding: 20px;
     top: 0;
+    width: 225px;
 }
 .sidebar{
     justify-content: space-between;
@@ -88,7 +89,7 @@ a {
 
 
 .timeline {
-    flex: 0 0 800px;
+    flex: 0 0 700px;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
@@ -275,13 +276,13 @@ a {
 .trend {
     display: flex;
     flex-direction: column;
-    font-family: 'Inter', sans-serif;
     gap: 10px;
     flex-shrink: 0;
     padding: 20px;
     font-family: 'Inter', sans-serif;
-
+    width: 325px;
 }
+
 .search-contenair{
     display: flex;
     width: 100%;
@@ -352,17 +353,17 @@ a {
     /* justify-content: space-between; */
     padding:10px 16px 10px 16px;   
 }
-/* .label-contenair{
+.label-contenair{
     display: flex;
     justify-content: space-between;
 
-} */
+}
 
 .follow-label {
     display: flex;
     justify-content: space-between;
     padding: 0 5px; 
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 .follow-avatar {
     width: 40px;
