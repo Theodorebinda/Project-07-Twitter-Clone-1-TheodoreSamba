@@ -20,8 +20,8 @@ function Trend(){
                 <input className="search" type="search" placeholder="Search Twitter"/>
             </div>
             <div  className="trend-contenair">
-                <div className="trend-title">
-                    <p>Trends For You </p><PiGearLight />
+                <div className="trend-title-content">
+                    <p className="trend-title">Trends For You </p><PiGearLight />
                 </div>
                 <div>
                     {navTrends}
