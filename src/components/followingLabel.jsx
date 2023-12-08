@@ -11,13 +11,11 @@ function FollowingLabel(){
                             <img className="follow-avatar" src={tweet.tweetAvatar} alt="" />
                         </div>
                         <div className="follow-label">
-                            <h5>{tweet.autor}</h5>
-                            {/* <div className="follow-detail"> */}
+                            <h5>{tweet.author}</h5>
                                 <img className="certified-icone" src={tweet.isCertified} alt="" />
-                                <p className="follow-detail">{tweet.autorDetails}</p>
-                            {/* </div> */}
+                                <span className="follow-detail">{tweet.autorDetails}</span>
                         </div>
-
+                        
                     </div>
                 ))
                 }

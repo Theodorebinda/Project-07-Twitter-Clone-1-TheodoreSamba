@@ -352,14 +352,24 @@ a {
 .follow-avatar {
     width: 40px;
     height: 40px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 .follow-detail {
     display: flex;
     flex-direction: column;
+    color: #6E767D;
 }
 .certified-icone{
     height: 15px;
     width: 15px;
-
+    flex-shrink: 0;
+}
+.follow-button {
+    text-transform: capitalize;
+    padding: .7rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color:white;
+    color: black;
+    font-size: 1rem;
 }
