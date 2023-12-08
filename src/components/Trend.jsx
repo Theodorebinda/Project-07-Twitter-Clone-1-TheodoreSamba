@@ -1,12 +1,15 @@
-import { RiLock2Fill } from "react-icons/ri"
+import { PiGearLight } from "react-icons/pi";
 import trends from "../utiles/Trends"
 import FollowingLabel from "./followingLabel"
 
 const navTrends = trends.map((trend) => (
-    <div>
-        <p>{trend.contryTrend}</p>
-        <h4>{trend.exploreTrend}</h4>
-        <p>{trend.tweetTrend}</p>
+    <div className="trend-content">
+        <ul className="trend-item">
+            <li className=" sidebar-title-details" >{trend.contryTrend}</li>
+            <li className="squid">{trend.exploreTrend}</li>
+            <li className="sidebar-title-details">{trend.tweetTrend}</li>
+        </ul>
+        <span>...</span>
     </div>
 ))
 function Trend(){
@@ -17,8 +20,8 @@ function Trend(){
                 <input className="search" type="search" placeholder="Search Twitter"/>
             </div>
             <div  className="trend-contenair">
-                <div >
-                    <p>Trends For You </p>< RiLock2Fill />
+                <div className="trend-title">
+                    <p>Trends For You </p><PiGearLight />
                 </div>
                 <div>
                     {navTrends}
