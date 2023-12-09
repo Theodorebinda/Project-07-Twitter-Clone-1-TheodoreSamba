@@ -17,7 +17,7 @@ function SidebarTop(){
                 {navSidebar}
             </ul>
             <div className="nav-button"> 
-            <Button  className="button-sidebar"  label="Tweet" />
+            <Button  className="button-sidebar"  label="Tweet"/>
             </div>
            
         </div>
