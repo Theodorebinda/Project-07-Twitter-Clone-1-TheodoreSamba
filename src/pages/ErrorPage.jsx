@@ -8,12 +8,12 @@ function ErrorPage() {
 
   return (
     <div className="container">
-      <h1>Oops!</h1>
+      <h1 className="title-error">Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
-      <p>
+      <span className="content-error">
         <i>{error.statusText || error.message}</i>
-      </p>
-      <button className="button" label="Clique ici" />
+      </span>
+      <button className="button-error" label="Clique ici" />
     </div>
   );
 }
