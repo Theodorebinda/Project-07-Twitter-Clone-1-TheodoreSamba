@@ -2,21 +2,20 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 40px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  text-align: center;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .title-error {
   font-size: 24px;
-  color: #333;
+  color: rgb(226, 65, 65);
   margin-bottom: 20px;
 }
 
 .content-error {
   font-size: 16px;
-  color: #666;
+  color: rgb(225, 223, 223);
   line-height: 1.5;
 }
 

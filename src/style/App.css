@@ -417,3 +417,186 @@ a {
     font-size: 1rem;
 }
 
+/* Style profil */
+.profile-header {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    border-bottom: 1px solid rgb(159, 146, 146);
+  }
+  
+  .back-button {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .back-button a {
+    display: flex;
+  }
+  
+  .back-button a svg {
+    width: 35px;
+    height: auto;
+    fill: rgb(239, 243, 244);
+    padding: 8px;
+    background: transparent;
+    border-radius: 50px;
+  }
+.profile-header-content{
+    font-size: 18px;
+    font-weight: 800;
+}
+.profile-header-content .name {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  .profile-header-content .nbrs-post {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(113, 118, 123);
+  }
+  
+  .profile-hero .profile-cover {
+    background: #202327;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .profile-hero .profile-cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+  .profile-hero-content .phc-row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile-hero-content {
+    padding: 15px;
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+    position: relative;
+  }
+  
+  .profile-hero-content .profile-avatar {
+    width: 135px;
+    height: auto;
+    border-radius: 100%;
+  }
+  
+  .profile-hero-content h1.name {
+    color: rgb(231, 233, 234);
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 800;
+  }
+  
+  p.profile-username {
+    color: rgb(113, 118, 123);
+    font-size: 16px;
+  }
+  
+  a.profile-edit-button {
+    border: 1px solid rgb(83, 100, 113);
+    color: rgb(239, 243, 244);
+    padding: 8px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    background: transparent;
+  }
+  
+  .phc-row-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .profile-info {
+    color: rgb(113, 118, 123);
+  }
+  
+  .profile-info a {
+    color: #1d9bf0;
+    text-decoration: none;
+  }
+  
+  .profile-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .profile-infos {
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-info svg {
+    width: 20px;
+    height: auto;
+    fill: rgb(113, 118, 123);
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .profile-info > span {
+    display: flex;
+  }
+  
+  .profile-hero .profile-others {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-hero .profile-others a {
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    gap: 5px;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+    line-height: 1em;
+  }
+  
+  .profile-hero .profile-others a:hover {
+    border-color: #fff;
+  }
+  
+  .profile-hero .profile-others a .text {
+    color: rgb(113, 118, 123);
+  }
+  
+  .main-404 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .inner-scroll-effect {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: scroll;
+  }

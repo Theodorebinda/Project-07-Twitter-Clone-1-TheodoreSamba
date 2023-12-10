@@ -10,10 +10,10 @@ function ErrorPage() {
     <div className="container">
       <h1 className="title-error">Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
-      <span className="content-error">
+      <p className="content-error">
         <i>{error.statusText || error.message}</i>
-      </span>
-      <button className="button-error" label="Clique ici" />
+      </p>
+      <Button className="button-error" label="Clique ici" /*onClick=()*/ /> 
     </div>
   );
 }
