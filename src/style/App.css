@@ -169,6 +169,10 @@ a {
     background-color: transparent;
     border: none;
 }
+.button-tranparent{
+    background-color: transparent;
+    border: none;
+}
 .button {
     text-transform: capitalize;
     padding: .7rem 1.5rem;
@@ -383,6 +387,8 @@ a {
     justify-content: space-between;
     padding: 0 5px; 
     flex-direction: column;
+    flex-shrink: 0;
+
 }
 .follow-avatar {
     width: 40px;
