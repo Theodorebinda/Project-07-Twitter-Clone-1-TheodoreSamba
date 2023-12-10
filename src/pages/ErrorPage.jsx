@@ -13,7 +13,9 @@ function ErrorPage() {
       <p className="content-error">
         <i>{error.statusText || error.message}</i>
       </p>
+      <Link to="/">
       <Button className="button-error" label="Clique ici" /*onClick=()*/ /> 
+      </Link>
     </div>
   );
 }

@@ -1,14 +1,17 @@
+import { Link } from "react-router-dom";
 import sidebars from "../utiles/Sidebar";
 import Button from "./Button";
 
 // fonction qui gere la navigation dans sidebar
 function SidebarTop(){
-    const navSidebar = sidebars.map(({icone,name}) => (
+    const navSidebar = sidebars.map((sidebar) => (
         <li >
-            <a className="link" href="#">
-                <img  className="icone-nav" src={icone} alt="" />
-                <p>{name}</p>
-            </a>
+            <Link to={sidebar.link}>
+                <a  className="link" href="">
+                <img  className="icone-nav" src={sidebar.icone} alt="" />
+                <p>{sidebar.name}</p>
+                </a>
+            </Link>
         </li>
     ))
     return (

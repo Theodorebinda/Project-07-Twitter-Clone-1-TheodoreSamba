@@ -13,43 +13,52 @@ import more from "../icones/More.png";
 const sidebars = [
     {
         name: false,
-        icone:twitterIcone
+        icone:twitterIcone,
+        link: "/"
 
     },
     {
         name:"Home",
-        icone: home
+        icone: home,
+        link: "/"
     },
     {
         name:"Hashtag",
-        icone: hashtag
+        icone: hashtag,
+        link: "/explore"
+
     },
     {
         name:"Notification",
-        icone: notification
-
+        icone: notification,
+        link: "/notification"
     },
     {
         name:"Message",
-        icone:message
-
+        icone:message,
+        link: "/messages"
     },
     {
         name:"Bookmark",
-        icone:bookmark
-
+        icone:bookmark,
+        link: "/bookmark"
     },
     {
         name:"Liste",
-        icone:list
+        icone:list,
+        link: "/liste"
     },
     {
         name:"Profil",
-        icone:user
+        icone:user,
+        link: "/profil"
+
     },
     {
         name:"More",
-        icone:more
+        icone:more,
+        link: "/more"
+
     }
 ]
 export default sidebars

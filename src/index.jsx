@@ -6,6 +6,7 @@ import ErrorPage from './pages/ErrorPage';
 import Layout from './components/layout';
 import Home from './pages/home';
 import Profil from './pages/Profile';
+import InConstruction from './pages/InConstruction';
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path:"/profil",
         element: <Profil />, 
+      },
+      {
+        path:"/explore",
+        element:<InConstruction />
       }
   ],
      
