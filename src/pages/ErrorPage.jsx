@@ -1,5 +1,4 @@
-import { useRouteError } from "react-router-dom";
-import Button from "../components/Button"
+import { Link, useRouteError } from "react-router-dom";
 import("../style/ErrorPage.css");
 
 function ErrorPage() {
@@ -13,9 +12,7 @@ function ErrorPage() {
       <p className="content-error">
         <i>{error.statusText || error.message}</i>
       </p>
-      <Link to="/">
-      <Button className="button-error" label="Clique ici" /*onClick=()*/ /> 
-      </Link>
+      <Link className="button-error" label="Clique ici">Click here</Link> 
     </div>
   );
 }

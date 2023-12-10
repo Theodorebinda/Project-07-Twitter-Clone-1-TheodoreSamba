@@ -7,7 +7,7 @@ let user ={
     couvertureImage : couvImage,
     nbrsPostes : 377,
     description: "Developpeur Full-stack",
-    abonnement: 950,
-    abonne: 100
+    abonnement: 100,
+    abonne: 950
   }
 export default user;

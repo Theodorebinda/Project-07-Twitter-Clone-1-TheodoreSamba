@@ -36,7 +36,7 @@ const sidebars = [
     {
         name:"Message",
         icone:message,
-        link: "/messages"
+        link: "/message"
     },
     {
         name:"Bookmark",

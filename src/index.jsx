@@ -26,7 +26,28 @@ const router = createBrowserRouter([
       {
         path:"/explore",
         element:<InConstruction />
-      }
+      },
+      {
+        path:"/notification",
+        element:<InConstruction />
+      },
+      {
+        path:"/message",
+        element:<InConstruction />
+      },
+      {
+        path:"/bookmark",
+        element:<InConstruction />
+      },
+      {
+        path:"/liste",
+        element:<InConstruction />
+      },
+      {
+        path:"/more",
+        element:<InConstruction />
+      },
+
   ],
      
   },
