@@ -1,6 +1,7 @@
 import { PiGearLight } from "react-icons/pi";
 import trends from "../utiles/Trends"
 import FollowingLabel from "./followingLabel"
+import { IoIosSearch } from "react-icons/io";
 
 const navTrends = trends.map((trend) => (
     <div className="trend-content">
@@ -16,8 +17,14 @@ function Trend(){
     
     return (
         <div className="trend">
-            <div className="search-contenair">
-                <input className="search" type="search" placeholder="Search Twitter"/>
+            <div >
+                <form action="" className="search-contenair">
+                    <span className="icone-search">
+                        <IoIosSearch />
+                    </span>
+                    <input  className="search" type="search" placeholder="Search Twitter"/>
+                </form>
+                
             </div>
             <div  className="trend-contenair">
                 <div className="trend-title-content">
@@ -25,6 +32,9 @@ function Trend(){
                 </div>
                 <div>
                     {navTrends}
+                </div>
+                <div className="link-more">
+                    <a href="#">Show More</a>
                 </div>
             </div>
             <div className="follow-contenair">

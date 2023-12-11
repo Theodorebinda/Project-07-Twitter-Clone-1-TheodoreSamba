@@ -31,6 +31,10 @@ function FollowingLabel() {
             </div>
           </div>
         ))}
+       
+      </div >
+      <div className="link-more">
+        <a href="#">Show More</a>
       </div>
     </div>
   );
