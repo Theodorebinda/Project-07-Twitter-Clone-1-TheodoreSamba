@@ -1,10 +1,11 @@
+import Button from "./Button";
+
 // composant qui gere le btn Tweet
-function Buton(){
+function TweetButon(){
     return (
       <>
-         <button className="button">Tweet
-         </button>
+         <Button  className="button"  label="Tweet" />
       </>
     ) 
 }
-export default Buton
+export default TweetButon
