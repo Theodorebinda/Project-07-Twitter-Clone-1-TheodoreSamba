@@ -6,8 +6,6 @@ function Header() {
   return (
     <header className="header">
       <PageTitle />
-
-      <img className="top-tweet" src={TopTweet} alt="" />
       <button className="button-tranparent">
         <img className="top-tweet" src={TopTweet} alt="" />
       </button>

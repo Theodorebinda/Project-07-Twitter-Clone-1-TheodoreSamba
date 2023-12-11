@@ -27,7 +27,6 @@ function Tweets() {
             <div className="tweet-actions">
               {tweet.actions.map(({ label, nbre }) =>
                 <div className="tweet-action">
-                  <img alt="" src={label} />
                   <button className="button-tranparent">
                     <img alt="" src={label} />
                   </button>
