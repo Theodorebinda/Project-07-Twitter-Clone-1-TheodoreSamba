@@ -26,6 +26,7 @@ function Trend(){
                 </form>
                 
             </div>
+            <div className="trend-outer-contenair">
             <div  className="trend-contenair">
                 <div className="trend-title-content">
                     <p className="trend-title">Trends For You </p><PiGearLight />
@@ -39,6 +40,7 @@ function Trend(){
             </div>
             <div className="follow-contenair">
                 <FollowingLabel />
+            </div>
             </div>
         </div>
     )
