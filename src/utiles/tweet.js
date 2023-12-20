@@ -23,18 +23,22 @@ const tweets = [
     actions:
       [
         {
+          id : 1,
           label: comment,
           nbre: 123
         },
         {
+          id : 2,
           label: retweet,
           nbre: 234
         },
         {
+          id : 3,
           label: reaction,
           nbre: 315
         },
         {
+          id : 4,
           label: share,
           nbre: false
         }
