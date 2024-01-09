@@ -5,7 +5,7 @@ import butonMetas from "../utiles/butonMetas";
 function TweetEditorAction() {
   return (
     <div className="tweet-editor-actions">
-      {butonMetas.map((butonMeta) => <button >
+      {butonMetas.map((butonMeta, index) => <button key={index} >
         <img src={butonMeta} alt="" />
       </button>)}
 

@@ -33,7 +33,6 @@ function ProfileUser() {
                     <p>{user.description}</p>
                     </div>
                     <div className="profile-infos">
-                    {/* <ProfileInfos /> */}
                     </div>
                     <div className="profile-others">
                     <a href="#" className="profile-other">

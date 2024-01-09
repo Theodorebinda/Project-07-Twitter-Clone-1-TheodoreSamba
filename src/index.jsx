@@ -7,6 +7,7 @@ import Layout from './components/layout';
 import Home from './pages/home';
 import Profil from './pages/Profile';
 import InConstruction from './pages/InConstruction';
+import ProfileFollowers from './components/Profile/ProfileFollowers';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path:"/profil",
         element: <Profil />, 
+      },
+      {
+        path:"/profil/followers",
+        element: <ProfileFollowers />, 
       },
       {
         path:"/explore",

@@ -4,8 +4,8 @@ import FollowingLabel from "./followingLabel"
 import { IoIosSearch } from "react-icons/io";
 import Footer from "./footer";
 
-const navTrends = trends.map((trend) => (
-    <div className="trend-content">
+const navTrends = trends.map((trend, index) => (
+    <div key={index} className="trend-content">
         <ul className="trend-item">
             <li className=" sidebar-title-details" >{trend.contryTrend}</li>
             <li className="squid">{trend.exploreTrend}</li>

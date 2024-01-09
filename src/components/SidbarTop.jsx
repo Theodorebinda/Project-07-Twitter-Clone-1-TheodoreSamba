@@ -4,13 +4,13 @@ import Button from "./Button";
 
 // fonction qui gere la navigation dans sidebar
 function SidebarTop(){
-    const navSidebar = sidebars.map((sidebar) => (
-        <li >
+    const navSidebar = sidebars.map((sidebar, index) => (
+        <li key={index}>
             <Link to={sidebar.link}>
-                <a  className="link" href="">
+                <span  className="link" href="">
                 <img  className="icone-nav" src={sidebar.icone} alt="" />
                 <p>{sidebar.name}</p>
-                </a>
+                </span>
             </Link>
         </li>
     ))

@@ -6,8 +6,8 @@ function FollowingLabel() {
     <div className="follow">
       <h4 className="follow-title">Who to follow</h4>
       <div>
-        {tweets.slice(0, 3).map((tweet) => (
-          <div className="follow-content">
+        {tweets.slice(0, 3).map((tweet, index) => (
+          <div key={index} className="follow-content">
             <div>
               <img className="follow-avatar" src={tweet.tweetAvatar} alt="" />
             </div>

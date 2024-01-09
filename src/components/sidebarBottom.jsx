@@ -8,7 +8,7 @@ function SidbarBottom (){
          <Link to="/profil"  className="sidebar-botom">
            <img className="user-sidebar" src={user.userImage} alt="" />
            <div className="sidebar-title">
-              <h4 ><a className="sidebar-title-author" href="#">{user.name}</a>< RiLock2Fill /></h4> 
+              <h4 ><span className="sidebar-title-author" href="#">{user.name}</span>< RiLock2Fill /></h4> 
               <p className="sidebar-title-details">{user.userName}</p>
            </div>
            </Link>

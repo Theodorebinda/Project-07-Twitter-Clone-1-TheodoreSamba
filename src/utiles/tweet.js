@@ -20,6 +20,11 @@ const tweets = [
     tweetAvatar: profil,
     text: "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis",
     image: null,
+    couvertureImage : "",
+    nbrsPostes : 100,
+    description :"",
+    abonnement: 100,
+    abonne: 950,
     actions:
       [
         {
@@ -53,6 +58,11 @@ const tweets = [
     tweetAvatar: tweetProfil,
     text: "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis",
     image: tweetImage,
+    couvertureImage : "",
+    nbrsPostes : 100,
+    description :"",
+    abonnement: 100,
+    abonne: 950,
     actions:
       [
         {
@@ -81,8 +91,13 @@ const tweets = [
     autorDetails: "@twitter.",
     times: "  Oct 29",
     tweetAvatar: profilTweet,
-    text: "BIG New lol jk still Twitter",
+    text: "BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,  ",
     image: null,
+    couvertureImage : "",
+    nbrsPostes : 100,
+    description :"",
+    abonnement: 100,
+    abonne: 950,
     actions:
       [
         {
@@ -111,8 +126,13 @@ const tweets = [
     autorDetails: "@twitter.",
     times: "  Oct 29",
     tweetAvatar: profilTweet,
-    text: "hello literally everyone",
+    text: "hello literally everyone hello literally everyonehello literally everyonehello literally everyonehello literally everyone",
     image: null,
+    couvertureImage : "",
+    nbrsPostes : 100,
+    description :"",
+    abonnement: 100,
+    abonne: 950,
     actions:
 
       [
@@ -144,6 +164,11 @@ const tweets = [
     tweetAvatar: profilKadea,
     text: "Atelier d'initiation au codage informatique #Resicodi🤝 #Kda243",
     image: contentKadea,
+    couvertureImage : "",
+    nbrsPostes : 100,
+    description :"",
+    abonnement: 100,
+    abonne: 950,
     actions:
 
       [
