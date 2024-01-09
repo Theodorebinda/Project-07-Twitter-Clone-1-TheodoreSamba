@@ -26,28 +26,19 @@ const tweets = [
     abonnement: 100,
     abonne: 950,
     actions:
-      [
         {
-          id : 1,
-          label: comment,
-          nbre: 123
-        },
-        {
-          id : 2,
-          label: retweet,
-          nbre: 234
-        },
-        {
-          id : 3,
-          label: reaction,
-          nbre: 315
-        },
-        {
-          id : 4,
-          label: share,
-          nbre: false
+          labelComment: comment,
+          nbreComment: 123,
+
+          labelRetweet: retweet,
+          nbreRetweet: 234, 
+
+          labelReaction: reaction,
+          nbreReaction: 315,
+
+          labelShare: share,
         }
-      ]
+      
   },
   {
     id: 2,
@@ -64,24 +55,18 @@ const tweets = [
     abonnement: 100,
     abonne: 950,
     actions:
-      [
-        {
-          label: comment,
-          nbre: 19
-        },
-        {
-          label: retweet,
-          nbre: 48
-        },
-        {
-          label: reaction,
-          nbre: 482
-        },
-        {
-          label: share,
-          nbre: false
-        }
-      ]
+    {
+      labelComment: comment,
+      nbreComment: 567,
+
+      labelRetweet: retweet,
+      nbreRetweet: 256, 
+
+      labelReaction: reaction,
+      nbreReaction: 600,
+
+      labelShare: share,
+    }
 
   },
   {
@@ -99,24 +84,18 @@ const tweets = [
     abonnement: 100,
     abonne: 950,
     actions:
-      [
-        {
-          label: comment,
-          nbre: "6.8K"
-        },
-        {
-          label: retweet,
-          nbre: "36.6K"
-        },
-        {
-          label: reaction,
-          nbre: "267.1K"
-        },
-        {
-          label: share,
-          nbre: false
-        }
-      ]
+    {
+      labelComment: comment,
+      nbreComment: 89,
+
+      labelRetweet: retweet,
+      nbreRetweet: 208, 
+
+      labelReaction: reaction,
+      nbreReaction: 900,
+
+      labelShare: share,
+    }
 
   },
   {
@@ -134,25 +113,18 @@ const tweets = [
     abonnement: 100,
     abonne: 950,
     actions:
+    {
+      labelComment: comment,
+      nbreComment: 589,
 
-      [
-        {
-          label: comment,
-          nbre: "118.7K"
-        },
-        {
-          label: retweet,
-          nbre: "785.4K"
-        },
-        {
-          label: reaction,
-          nbre: "3.3M"
-        },
-        {
-          label: share,
-          nbre: false
-        }
-      ]
+      labelRetweet: retweet,
+      nbreRetweet: 590, 
+
+      labelReaction: reaction,
+      nbreReaction: 890,
+
+      labelShare: share,
+    }
 
   },
   {
@@ -171,24 +143,18 @@ const tweets = [
     abonne: 950,
     actions:
 
-      [
-        {
-          label: comment,
-          nbre: 12
-        },
-        {
-          label: retweet,
-          nbre: 48
-        },
-        {
-          label: reaction,
-          nbre: 100
-        },
-        {
-          label: share,
-          nbre: false
-        }
-      ]
+    {
+      labelComment: comment,
+      nbreComment: 17,
+
+      labelRetweet: retweet,
+      nbreRetweet: 7, 
+
+      labelReaction: reaction,
+      nbreReaction: 90,
+
+      labelShare: share,
+    }
 
   }
 ]

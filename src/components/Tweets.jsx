@@ -22,12 +22,34 @@ function Tweets() {
           <div className="tweet-image">
             <a href={tweet.image} target="_blank"><img src={tweet.image ? tweet.image : null} alt="" /></a>
           </div>
+          {/* TweetActions */}
           <div className="tweet-actions">
-           <TweetAction />
+              <button className="button-tranparent action-buttons" onClick={() => {handleClick()}}>
+                <img alt="" src={tweet.actions.labelComment} />
+                <div className="nbre-action">
+                  {tweet.actions.nbreComment}
+                </div>
+              </button>
+              <button className="button-tranparent action-buttons" onClick={() => {handleClick()}}>
+                <img alt="" src={tweet.actions.labelRetweet} />
+                <div className="nbre-action">
+                  {tweet.actions.nbreRetweet}
+                </div>
+              </button>
+              <button className="button-tranparent action-buttons" onClick={() => {handleClick()}}>
+                <img alt="" src={tweet.actions.labelReaction} />
+                <div className="nbre-action">
+                  {tweet.actions.nbreReaction}
+                </div>
+              </button>
+              <button className="button-tranparent action-buttons" onClick={() => {handleClick()}}>
+                <img alt="" src={tweet.actions.labelShare} />
+              </button>
+          </div>
+          
           </div>
         </div>
       </div>
-    </div>
   ));
   return (
     <>
