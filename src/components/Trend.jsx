@@ -2,6 +2,7 @@ import { PiGearLight } from "react-icons/pi";
 import trends from "../utiles/Trends"
 import FollowingLabel from "./followingLabel"
 import { IoIosSearch } from "react-icons/io";
+import Footer from "./footer";
 
 const navTrends = trends.map((trend) => (
     <div className="trend-content">
@@ -42,6 +43,7 @@ function Trend(){
                 <FollowingLabel />
             </div>
             </div>
+            <Footer />
         </div>
     )
 }

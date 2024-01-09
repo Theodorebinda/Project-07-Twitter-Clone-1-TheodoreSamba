@@ -2,23 +2,22 @@ import { useState } from "react";
 import tweets from "../utiles/tweet"
 
 
-function TweetAction() {
-    const classListAction = ["action-hover-blue", "action-hover-green", "action-hover-red","action-hover-blue"]
-    const [currentClass, setCurrentClass] = useState(classListAction[0]);
+function TweetAction(props) {
+  const [nbre, setNbre] = useState(0)
     return(
         <>
             <div className="tweet-actions">
-                {tweets.actions.map(({label, nbre}) =>
-                <div key={tweets.actions.id} className="tweet-action">
-                    <button  className={currentClass} >
-                    <img alt="" src={label} />
+              {tweets.slice(0,1).map(tweet => 
+                tweet.actions.map(({label, nbre}) =>
+                  <div  className="tweet-action">
+                    <button className="button-tranparent action-buttons" onClick={() => setNbre(nbre + 1)}>
+                      <img alt="" src={label} />
+                      {nbre}
                     </button>
-
-                </div>
-
-                )}
+                  </div>
+              ))}
             </div>
         </>
     )
 }
-// export default TweetAction
+export default TweetAction;
