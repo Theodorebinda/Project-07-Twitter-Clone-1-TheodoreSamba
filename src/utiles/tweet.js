@@ -9,6 +9,10 @@ import share from "../icones/actions/Buton.png";
 import profilTweet from "../images/image 1.png";
 import profilKadea from "../images/KadeaProfif.jpg";
 import contentKadea from "../images/imagePubliKadea.jpeg"
+import cnnCouvert from "../images/CouvCNN.jpeg"
+import newYorkCouv from "../images/newyorkTimesCouv.jpeg"
+import xCouv from "../images/xCouv.jpeg"
+import kadeaCouv from "../images/KadeaCouv.jpeg"
 
 const tweets = [
   {
@@ -20,7 +24,7 @@ const tweets = [
     tweetAvatar: profil,
     text: "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis",
     image: null,
-    couvertureImage : "",
+    couvertureImage : cnnCouvert,
     nbrsPostes : 100,
     description :"",
     abonnement: 100,
@@ -49,7 +53,7 @@ const tweets = [
     tweetAvatar: tweetProfil,
     text: "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis",
     image: tweetImage,
-    couvertureImage : "",
+    couvertureImage : newYorkCouv,
     nbrsPostes : 100,
     description :"",
     abonnement: 100,
@@ -78,7 +82,7 @@ const tweets = [
     tweetAvatar: profilTweet,
     text: "BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,  ",
     image: null,
-    couvertureImage : "",
+    couvertureImage : xCouv,
     nbrsPostes : 100,
     description :"",
     abonnement: 100,
@@ -107,7 +111,7 @@ const tweets = [
     tweetAvatar: profilTweet,
     text: "hello literally everyone hello literally everyonehello literally everyonehello literally everyonehello literally everyone",
     image: null,
-    couvertureImage : "",
+    couvertureImage : xCouv,
     nbrsPostes : 100,
     description :"",
     abonnement: 100,
@@ -136,7 +140,7 @@ const tweets = [
     tweetAvatar: profilKadea,
     text: "Atelier d'initiation au codage informatique #Resicodi🤝 #Kda243",
     image: contentKadea,
-    couvertureImage : "",
+    couvertureImage : kadeaCouv,
     nbrsPostes : 100,
     description :"",
     abonnement: 100,

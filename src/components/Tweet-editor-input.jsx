@@ -3,7 +3,7 @@ import React from 'react';
 function TweetEditorInput(){
   return (
     < >
-      <input className="tweet-editor-input" type="text" placeholder="What's happining"></input>
+      <input className="h-[60px] w-full border-none outline-none text-xl bg-black text-white resize-none pt-[10px] marg my-0" type="text" placeholder="What's happining"></input>
     </>
   )
 }

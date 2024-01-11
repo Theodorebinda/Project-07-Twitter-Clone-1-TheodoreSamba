@@ -4,8 +4,8 @@ import butonMetas from "../utiles/butonMetas";
 
 function TweetEditorAction() {
   return (
-    <div className="tweet-editor-actions">
-      {butonMetas.map((butonMeta, index) => <button key={index} >
+    <div className="flex items-center content-start gap-4">
+      {butonMetas.map((butonMeta, index) => <button  className="bg-transparent border-none" key={index} >
         <img src={butonMeta} alt="" />
       </button>)}
 

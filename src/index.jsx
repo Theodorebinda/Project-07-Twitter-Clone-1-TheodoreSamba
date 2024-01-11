@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         element: <Profil />, 
       },
       {
-        path:"/profil/followers",
+        path:"/profil/:username",
         element: <ProfileFollowers />, 
       },
       {

@@ -1,12 +1,12 @@
 import React from "react";
 import tweets from "../utiles/tweet"
 import { Link } from "react-router-dom";
-import TweetAction from "./tweetAction";
+// import TweetAction from "./tweetAction";
 
 function Tweets() {
   const tweetsElement = tweets.map((tweet, index) => (
     <div key={index} className="tweet">
-      <Link to="/profil/followers" className="tweet-avatar">
+      <Link to={`/profil/${tweet.author}`} className="tweet-avatar">
         <img src={tweet.tweetAvatar} alt="" />
       </Link>
       <div className="tweet-content">
@@ -24,25 +24,25 @@ function Tweets() {
           </div>
           {/* TweetActions */}
           <div className="tweet-actions">
-              <button className="button-tranparent action-buttons" onClick={() => {handleClick()}}>
-                <img alt="" src={tweet.actions.labelComment} />
+              <button className="button-tranparent action-buttons action-hover action-hover-blue" onClick={() => {handleClick()}}>
+                <img className="action-hover-blue" alt="" src={tweet.actions.labelComment} />
                 <div className="nbre-action">
                   {tweet.actions.nbreComment}
                 </div>
               </button>
-              <button className="button-tranparent action-buttons" onClick={() => {handleClick()}}>
+              <button className="button-tranparent action-buttons action-hover action-hover-gren" onClick={() => {handleClick()}}>
                 <img alt="" src={tweet.actions.labelRetweet} />
                 <div className="nbre-action">
                   {tweet.actions.nbreRetweet}
                 </div>
               </button>
-              <button className="button-tranparent action-buttons" onClick={() => {handleClick()}}>
+              <button className="button-tranparent action-buttons action-hover action-hover-red" onClick={() => {handleClick()}}>
                 <img alt="" src={tweet.actions.labelReaction} />
                 <div className="nbre-action">
                   {tweet.actions.nbreReaction}
                 </div>
               </button>
-              <button className="button-tranparent action-buttons" onClick={() => {handleClick()}}>
+              <button className="button-tranparent action-buttons action-hover action-hover-blue" onClick={() => {handleClick()}}>
                 <img alt="" src={tweet.actions.labelShare} />
               </button>
           </div>

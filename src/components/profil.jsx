@@ -4,7 +4,7 @@ function Profile(){
     return (
       <>
         <img 
-          className="avatar"
+          className="w-[70px]"
           src={user.userImage}
           />
          

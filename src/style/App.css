@@ -8,6 +8,7 @@ body{
     max-width: 1800px;
 }
 
+
 #root{
     /* max-width:100%; */
     display: flex;
@@ -88,41 +89,40 @@ a {
 }
 
 
+
 .timeline {
     flex: 0 0 700px;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
 }
-.header {
+/* .header {
     padding: 1.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #2F3336;
-}
+} */
 
-.top-tweets {
+/* .top-tweets {
     width: 1.5rem;
-    height: auto;
-    opacity: 0;
-}
+} */
 
-.page-title {
+/* .page-title {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     color : white;
-}
+} */
 
-.tweet-editor {
+/* .tweet-editor {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
-    padding:  .3rem 1rem;
+    padding:  1rem;
     border-bottom: 1px solid #2F3336;
-}
+} */
 
 .avatar {
     flex: 0 0 70px;
@@ -135,12 +135,12 @@ a {
     border-radius: 100%;
 }
 
-.tweet-editor-form {
+/* .tweet-editor-form {
     flex: auto;
-}
+} */
 
-.tweet-editor-input {
-    height: 60px;
+/* .tweet-editor-input {
+    height: 60px;   
     width: 100%;
     border: none;
     outline: none;
@@ -150,7 +150,7 @@ a {
     resize: none;
     padding: 10px 0 0 0;
     margin: 13px 0;
-}
+} */
 
 .tweet-editor-buttons {
     display: flex;
@@ -158,22 +158,22 @@ a {
     justify-content: space-between;
 }
 
-.tweet-editor-actions {
+/* .tweet-editor-actions {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     /*padding: 0.8rem 0;*/
-    gap: 1rem;
-}
-.tweet-editor-actions button {
+    /* gap: 1rem; */
+*/
+/* .tweet-editor-actions button {
     background-color: transparent;
     border: none;
-}
-.button-tranparent{
+} */
+/* .button-tranparent{
     background-color: transparent;
     border: none;
     color: white;
-}
+} */
 .button {
     text-transform: capitalize;
     padding: .7rem 1.5rem;
@@ -643,22 +643,37 @@ input[type="search"]::-webkit-search-cancel-button {
     overflow-y: scroll;
   }
 
-  .action-hover-blue:hover svg {
-    fill: #1d9bf0;
-    background: rgba(29, 155, 240, 0.1);
-  }
   .action-hover-green:hover svg {
     fill: #00ba7c;
     background: #071a14;
   }
 .action-hover-red:hover svg,
 .action-hover-red.active svg {
-  fill: #f91880;
-  background: #200914;
+    fill: #f91880;
+    background: #200914;
 }
 .footer{
     color: grey;
 }
 .nbre-action{
     padding-left: 5px;
+}
+.action-hover{
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50px;
+}
+.action-hover-blue:hover {
+    color: #1d9bf0;
+  }
+  .action-hover-blue:hover svg {
+    fill: #1d9bf0;
+    background: rgba(29, 155, 240, 0.1);
+  }
+.action-hover-gren:hover{
+    color: #00ba7c;
+}
+.action-hover-red:hover,
+.action-hover-red.active {
+    color: #f91880;
 }

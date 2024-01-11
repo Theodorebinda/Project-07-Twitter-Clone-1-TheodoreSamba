@@ -5,6 +5,7 @@ import Profil from "./pages/Profile.jsx";
 
 import('./style/reset.css');
 import('./style/App.css');
+import('./style/index.css')
 
 export default function App() {
   return (
