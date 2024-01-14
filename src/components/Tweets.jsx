@@ -5,45 +5,45 @@ import { Link } from "react-router-dom";
 
 function Tweets() {
   const tweetsElement = tweets.map((tweet, index) => (
-    <div key={index} className="tweet">
-      <Link to={`/profil/${tweet.author}`} className="tweet-avatar">
-        <img src={tweet.tweetAvatar} alt="" />
+    <div key={index} className="flex justify-start items-start gap-[20px] py-6 px-4 border-solid border-b-[1px] border-b-gray-700 ">
+      <Link to={`/profil/${tweet.author}`} className="h-[70px] flex-auto w-[70px]">
+        <img className="max-w-full max-h-full rounded-full" src={tweet.tweetAvatar} alt="" />
       </Link>
-      <div className="tweet-content">
-        <div className="tweet-body">
-          <Link to="/profil/followers" className="tweet-title">
-            <h4 ><span className="tweet-title-author" href="#">{tweet.author}</span></h4>
-            <img src={tweet.isCertified ? tweet.isCertified : null} alt="" />
-            <p ><span className="tweet-title-details" href="#" >{tweet.autorDetails}{tweet.times}</span></p>
+      <div className="flex flex-col items-start justify-start gap-[30px] w-full  ">
+        <div className="flex flex-col ">
+          <Link to={`/profil/${tweet.author}`} className="flex justify-start items-start gap-[10px] text-base">
+            <h4 ><span className="text-base text no-underline text-white" href="#">{tweet.author}</span></h4>
+            <img  src={tweet.isCertified ? tweet.isCertified : null} alt="" />
+            <p ><span className="text-gray-600 no-underline" href="#" >{tweet.autorDetails}{tweet.times}</span></p>
           </Link>
-          <div className="tweet-text">
+          <div className="text-slate-300 text-base">
             <p >{tweet.text}</p>
           </div>
-          <div className="tweet-image">
-            <a href={tweet.image} target="_blank"><img src={tweet.image ? tweet.image : null} alt="" /></a>
+          <div className="w-full px-0 pb-2 pt-1 ">
+            <a href={tweet.image} target="_blank"><img className="max-w-full h-auto border-gray-700 border-solid border-[1px] rounded-[50px]" src={tweet.image ? tweet.image : null} alt="" /></a>
           </div>
           {/* TweetActions */}
-          <div className="tweet-actions">
-              <button className="button-tranparent action-buttons action-hover action-hover-blue" onClick={() => {handleClick()}}>
-                <img className="action-hover-blue" alt="" src={tweet.actions.labelComment} />
-                <div className="nbre-action">
+          <div className="flex justify-center items-center gap-[5rem] text-base ">
+              <button className="bg-transparent border-none flex items-end text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue" onClick={() => {handleClick()}}>
+                <img className="action-hover-blue w-4 h-auto text-gray-700" alt="" src={tweet.actions.labelComment} />
+                <div className="pl-[5px]">
                   {tweet.actions.nbreComment}
                 </div>
               </button>
-              <button className="button-tranparent action-buttons action-hover action-hover-gren" onClick={() => {handleClick()}}>
-                <img alt="" src={tweet.actions.labelRetweet} />
-                <div className="nbre-action">
+              <button className="button-tranparent flex items-end text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren" onClick={() => {handleClick()}}>
+                <img className="action-hover-blue w-4 h-auto text-gray-700" alt="" src={tweet.actions.labelRetweet} />
+                <div className="pl-[5px]">
                   {tweet.actions.nbreRetweet}
                 </div>
               </button>
-              <button className="button-tranparent action-buttons action-hover action-hover-red" onClick={() => {handleClick()}}>
-                <img alt="" src={tweet.actions.labelReaction} />
-                <div className="nbre-action">
+              <button className="button-tranparent flex items-end text-gray-500 cursor-pointer transition-all rounded-full action-hover-red" onClick={() => {handleClick()}}>
+                <img className="action-hover-blue w-4 h-auto text-gray-700" alt="" src={tweet.actions.labelReaction} />
+                <div className="pl-[5px]">
                   {tweet.actions.nbreReaction}
                 </div>
               </button>
-              <button className="button-tranparent action-buttons action-hover action-hover-blue" onClick={() => {handleClick()}}>
-                <img alt="" src={tweet.actions.labelShare} />
+              <button className="button-tranparent flex items-end text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue" onClick={() => {handleClick()}}>
+                <img className="action-hover-blue w-5 h-auto text-gray-700" alt="" src={tweet.actions.labelShare} />
               </button>
           </div>
           

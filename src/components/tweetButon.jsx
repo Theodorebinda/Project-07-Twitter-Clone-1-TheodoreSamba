@@ -4,7 +4,7 @@ import Button from "./Button";
 function TweetButon(){
     return (
       <>
-         <Button  className="button"  label="Tweet" />
+         <Button  className="capitalize py-3 px-6 border-none rounded-full bg-blue-400 text-base"  label="Tweet" />
       </>
     ) 
 }
