@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 
-body{
+/* body{
     background-color: black;
     color: white;
     margin: 0 auto;
     max-width: 1800px;
-}
+} */
 
 
-#root{
-    /* max-width:100%; */
+/* #root{
+    max-width:100%;
     display: flex;
     justify-content: center;
-}
+} */
 
 .contenair-sidebar{
     display: flex;
@@ -420,6 +420,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
+    border-radius: 50%;
 }
 .follow-detail {
     color: #6E767D;

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import ProfileHeader from "./profilHeader";
 import tweets from "../../utiles/tweet";
+import ProfileHeaderType from "./ProfilHeaderType";
 
 
 function ProfileFollowers() {
@@ -12,6 +13,7 @@ function ProfileFollowers() {
     return(
         <>
             <div className="profile-hero timeline">
+            <ProfileHeaderType name={oneUser.author} nbrsPostes={oneUser.nbrsPostes}/>
                 <div className="profile-cover">
                 <img src={oneUser.couvertureImage} alt="" />
                 </div>
