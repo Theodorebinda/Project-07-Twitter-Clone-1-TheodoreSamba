@@ -307,11 +307,13 @@ ul.trend-item {
 }
 
 .search-contenair{
+    display: flex;
     border-radius: 50px;
     background-color: #2F3336;
-    width: 100%;
+    /* width: 100%; */
     padding: 15px;
-    padding-left: 50px;
+    justify-content: space-around;
+    /* padding-left: 50px; */
     border: navajowhite;
     font-size: 16px;
     position: relative;
