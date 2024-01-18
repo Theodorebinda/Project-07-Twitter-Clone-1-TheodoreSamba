@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import ProfileHeader from "./profilHeader";
 import tweets from "../../utiles/tweet";
 import ProfileHeaderType from "./ProfilHeaderType";
 

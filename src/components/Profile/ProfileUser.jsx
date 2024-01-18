@@ -1,11 +1,13 @@
 import user from "../../utiles/user";
-import ProfileHeader from "./profilHeader";
+import ProfileHeaderType from "./ProfilHeaderType";
+
 
 function ProfileUser() {
     return(
         <>
-            <ProfileHeader />
+            
             <div className="profile-hero">
+            <ProfileHeaderType name={user.name} nbrsPostes={user.nbrsPostes}/>
                 <div className="profile-cover">
                 <img src={user.couvertureImage} alt="" />
                 </div>

@@ -24,25 +24,25 @@ function Tweets() {
           </div>
           {/* TweetActions */}
           <div className="flex justify-center items-center gap-[5rem] text-base ">
-              <button className="bg-transparent border-none flex items-end text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue" onClick={() => {handleClick()}}>
+              <button className="bg-transparent border-none flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue" onClick={() => {handleClick()}}>
                 <img className="action-hover-blue w-4 h-auto text-gray-700" alt="" src={tweet.actions.labelComment} />
                 <div className="pl-[5px]">
                   {tweet.actions.nbreComment}
                 </div>
               </button>
-              <button className="button-tranparent flex items-end text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren" onClick={() => {handleClick()}}>
+              <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren" onClick={() => {handleClick()}}>
                 <img className="action-hover-blue w-4 h-auto text-gray-700" alt="" src={tweet.actions.labelRetweet} />
                 <div className="pl-[5px]">
                   {tweet.actions.nbreRetweet}
                 </div>
               </button>
-              <button className="button-tranparent flex items-end text-gray-500 cursor-pointer transition-all rounded-full action-hover-red" onClick={() => {handleClick()}}>
+              <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-red" onClick={() => {handleClick()}}>
                 <img className="action-hover-blue w-4 h-auto text-gray-700" alt="" src={tweet.actions.labelReaction} />
                 <div className="pl-[5px]">
                   {tweet.actions.nbreReaction}
                 </div>
               </button>
-              <button className="button-tranparent flex items-end text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue" onClick={() => {handleClick()}}>
+              <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue" onClick={() => {handleClick()}}>
                 <img className="action-hover-blue w-5 h-auto text-gray-700" alt="" src={tweet.actions.labelShare} />
               </button>
           </div>

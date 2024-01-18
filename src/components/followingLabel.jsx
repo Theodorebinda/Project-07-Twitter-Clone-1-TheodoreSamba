@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import tweets from "../utiles/tweet";
 import Button from "./Button";
 
@@ -8,11 +9,14 @@ function FollowingLabel() {
       <div>
         {tweets.slice(0, 3).map((tweet, index) => (
           <div key={index} className="follow-content">
+            <Link to={`/profil/${tweet.author}`}>
             <div>
               <img className="follow-avatar" src={tweet.tweetAvatar} alt="" />
             </div>
+            </Link>
             <div className="label-contenair">
               <div className="detail-contenair">
+                <Link to={`/profil/${tweet.author}`} >
                 <div className="follow-label">
                   <p className="follow-title-author">
                     {tweet.author}
@@ -24,6 +28,7 @@ function FollowingLabel() {
                   </p>
                   <span className="follow-detail">{tweet.autorDetails}</span>
                 </div>
+                </Link>
               </div>
               <div>
                 <Button className="follow-button" label="Follow" />
