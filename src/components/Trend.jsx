@@ -18,7 +18,7 @@ function Trend(){
     
     return (
         <div className="trend">
-            <div >
+            <div className="trend-search">
                 <form action="" className="search-contenair">
                     <span className="icone-search">
                         <IoIosSearch />

@@ -295,10 +295,10 @@ a {
     position: sticky;
 
 }
-.trend-outer-contenair{
+/* .trend-outer-contenair{
     overflow-y: scroll;
     
-} 
+}  */
 .trend-outer-contenair::-webkit-scrollbar{
     display: none;
 } 
