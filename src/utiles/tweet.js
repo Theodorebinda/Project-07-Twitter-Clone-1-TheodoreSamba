@@ -1,4 +1,4 @@
-import profil from "../images/tweet-profile-photo.png";
+import profilCnn from "../images/tweet-profile-photo.png";
 import tweetProfil from "../images/Tweet-Profile-Photo.svg";
 import tweetImage from "../images/tweet-image.png";
 import certified from "../icones/icones/Group.png";
@@ -13,6 +13,8 @@ import cnnCouvert from "../images/CouvCNN.jpeg"
 import newYorkCouv from "../images/newyorkTimesCouv.jpeg"
 import xCouv from "../images/xCouv.jpeg"
 import kadeaCouv from "../images/KadeaCouv.jpeg"
+import profil from "../images/profile-photo.png";
+import couvImage from "../images/1500x500.jpg";
 
 const tweets = [
   {
@@ -21,12 +23,13 @@ const tweets = [
     isCertified: certified,
     autorDetails: "@CNN.",
     times: "  7m",
-    tweetAvatar: profil,
+    tweetAvatar: profilCnn,
     text: "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis",
     image: null,
     couvertureImage : cnnCouvert,
     nbrsPostes : 678,
     description :"",
+    isLogin : false,
     abonnement: 100,
     abonne: 950,
     actions:
@@ -56,6 +59,7 @@ const tweets = [
     couvertureImage : newYorkCouv,
     nbrsPostes : 145,
     description :"",
+    isLogin : false,
     abonnement: 100,
     abonne: 950,
     actions:
@@ -85,6 +89,7 @@ const tweets = [
     couvertureImage : xCouv,
     nbrsPostes : 78,
     description :"",
+    isLogin : false,
     abonnement: 100,
     abonne: 950,
     actions:
@@ -114,6 +119,7 @@ const tweets = [
     couvertureImage : xCouv,
     nbrsPostes : 109,
     description :"",
+    isLogin : false,
     abonnement: 100,
     abonne: 950,
     actions:
@@ -143,6 +149,7 @@ const tweets = [
     couvertureImage : kadeaCouv,
     nbrsPostes : 157,
     description :"",
+    isLogin : false,
     abonnement: 100,
     abonne: 950,
     actions:
@@ -159,6 +166,36 @@ const tweets = [
 
       labelShare: share,
     }
+
+  },
+  {
+    id:6,
+    author:  "Bradley Ortiz",
+    isCertified: false,
+    autorDetails: "@bradley.",
+    times: "instant",
+    tweetAvatar: profil,
+    text: "",
+    image: null,
+    couvertureImage : couvImage,
+    nbrsPostes : 678,
+    description :"",
+    isLogin : true,
+    abonnement: 100,
+    abonne: 950,
+    actions:
+        {
+        labelComment: comment,
+        nbreComment: 123,
+
+        labelRetweet: retweet,
+        nbreRetweet: 234, 
+
+        labelReaction: reaction,
+        nbreReaction: 315,
+
+        labelShare: share,
+        }
 
   }
 ]

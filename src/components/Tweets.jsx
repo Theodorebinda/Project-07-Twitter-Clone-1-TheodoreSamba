@@ -8,9 +8,8 @@ function Tweets() {
   const context =useContext(Consumer)
   const [nbreComment, setNbreComment] = useState(0);
 
-  const handleClick = (e) => {
-    e.currentTarget
-    console.log(e.currentTarget);
+  const handleClick = (event) => {
+    console.log(event.target);
     if(nbreComment==0){
       setNbreComment(nbreComment + 1);
     }else{
@@ -20,6 +19,7 @@ function Tweets() {
   }
 
   const tweetsElement = context.dataValue.map((tweet, index) => (
+    
     <div key={index} className="flex justify-start items-start gap-[20px] py-6 px-4 border-solid border-b-[1px] border-b-gray-700 ">
       <Link to={`/profil/${tweet.author}`} className="h-[70px] flex-auto w-[70px]">
         <img className="max-w-full max-h-full rounded-full" src={tweet.tweetAvatar} alt="" />
@@ -45,7 +45,7 @@ function Tweets() {
                   {tweet.actions.nbreComment}
                 </div>
               </button>
-              <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren" onClick={() => {handleClick()}}>
+              <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren" onClick={() => {handleClick(e)}}>
                 <img className="action-hover-blue w-4 h-auto text-gray-700" alt="" src={tweet.actions.labelRetweet} />
                 <div className="pl-[5px]">
                    {nbreComment}
