@@ -20,6 +20,7 @@ function Tweets() {
 
   const tweetsElement = context.dataValue.map((tweet, index) => (
     
+    tweet.text !=="" && tweet.image !== false?(
     <div key={index} className="flex justify-start items-start gap-[20px] py-6 px-4 border-solid border-b-[1px] border-b-gray-700 ">
       <Link to={`/profil/${tweet.author}`} className="h-[70px] flex-auto w-[70px]">
         <img className="max-w-full max-h-full rounded-full" src={tweet.tweetAvatar} alt="" />
@@ -65,7 +66,7 @@ function Tweets() {
           
           </div>
         </div>
-      </div>
+      </div>) : null
   ));
   return (
     <>
