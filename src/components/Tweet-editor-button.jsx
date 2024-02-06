@@ -4,7 +4,7 @@ import TweetButon from "../components/tweetButon"
 
 function TweetEditorButton(){
   return (
-    <div className="tweet-editor-buttons">
+    <div className="flex items-center justify-between">
       <TweetEditorAction />
       <TweetButon />
     </div>

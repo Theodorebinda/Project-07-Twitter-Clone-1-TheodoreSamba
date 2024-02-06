@@ -4,10 +4,10 @@ import TopTweet from "../icones/icones/Timeline-Prop.png"
 // composant qui gere le Header
 function Header() {
   return (
-    <header className="header">
+    <header className="flex py-6 px-4 items-center justify-between border-solid border-b-[1px] border-b-gray-700">
       <PageTitle />
-      <button className="button-tranparent">
-        <img className="top-tweet" src={TopTweet} alt="" />
+      <button className="bg-transparent border-none text-white">
+        <img className="w-6" src={TopTweet} alt="" />
       </button>
     </header>
   )

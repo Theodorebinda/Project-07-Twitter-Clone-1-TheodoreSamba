@@ -4,7 +4,7 @@ import TweetEditForm from "../components/tweetEditForm"
 function TweetteEditor(){
     return (
         <>
-          <div className="tweet-editor">
+          <div className="flex items-start content-start  p-1 border-b-[1px] border-solide border-gray-700">
           <Profile />
           <TweetEditForm />
           </div>

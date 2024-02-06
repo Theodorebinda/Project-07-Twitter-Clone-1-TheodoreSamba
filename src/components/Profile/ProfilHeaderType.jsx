@@ -1,10 +1,9 @@
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
-import user from "../../utiles/user";
 import { Link } from "react-router-dom";
-export default function ProfileHeader() {
 
 
+export default function ProfileHeaderType(props) {
   return (
     <>
       <div className="profile-header">
@@ -14,8 +13,8 @@ export default function ProfileHeader() {
           </Link>
         </div>
         <div className="profile-header-content">
-          <p className="name">{user.name}</p>
-          <p className="nbrs-post">{user.nbrsPostes} Posts</p>
+          <p className="name">{props.name}</p>
+          <p className="nbrs-post">{props.nbrsPostes} Posts</p>
         </div>
       </div>
     </>

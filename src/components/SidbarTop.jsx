@@ -4,23 +4,23 @@ import Button from "./Button";
 
 // fonction qui gere la navigation dans sidebar
 function SidebarTop(){
-    const navSidebar = sidebars.map((sidebar) => (
-        <li >
+    const navSidebar = sidebars.map((sidebar, index) => (
+        <li key={index}>
             <Link to={sidebar.link}>
-                <a  className="link" href="">
-                <img  className="icone-nav" src={sidebar.icone} alt="" />
+                <span  className="flex items-start gap-[8px]" href="">
+                <img src={sidebar.icone} alt="" />
                 <p>{sidebar.name}</p>
-                </a>
+                </span>
             </Link>
         </li>
     ))
     return (
         <div>
-            <ul className="nav-sidebar" >
+            <ul className="inline-flex flex-col items-start gap-[20px]" >
                 {navSidebar}
             </ul>
-            <div className="nav-button"> 
-            <Button  className="button-sidebar"  label="Tweet"/>
+            <div className="pt-[20px] w-[225px]"> 
+                <Button  className="button-sidebar"  label="Tweet"/>
             </div>
            
         </div>

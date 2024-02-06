@@ -7,6 +7,8 @@ import Layout from './components/layout';
 import Home from './pages/home';
 import Profil from './pages/Profile';
 import InConstruction from './pages/InConstruction';
+import ProfileFollowers from './components/Profile/ProfileFollowers';
+import ContextData from './components/Consumer';
 
 
 const router = createBrowserRouter([
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
       {
         path:"/profil",
         element: <Profil />, 
+      },
+      {
+        path:"/profil/:username",
+        element: <ProfileFollowers />, 
       },
       {
         path:"/explore",
@@ -55,7 +61,10 @@ const router = createBrowserRouter([
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ContextData>
+      <RouterProvider router={router} />
+    </ContextData>
   </React.StrictMode>
 );
