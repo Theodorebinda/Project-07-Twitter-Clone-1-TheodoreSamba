@@ -13,7 +13,7 @@ function Tweets() {
   const [nbreComment, setNbreComment] = useState(0);
 
   const handleClick = (e) => {
-    e.currentTarget
+   
     if(nbreComment==0){
       setNbreComment(nbreComment + 1);
     }else{
@@ -56,13 +56,13 @@ function Tweets() {
                   {tweet.actions.nbreComment}
                 </div>
               </button>
-              <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren" onClick={() => {handleClick(e)}}>
+              <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren" onClick={() => {handleClick()}}>
                 <FaRetweet />
                 <div className="pl-[5px]">
                    {nbreComment}
                 </div>
               </button>
-              <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-red" onClick={() => {handleClick(e)}}>
+              <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-red" onClick={() => {handleClick()}}>
                 <IoHeartOutline />
                 <div className="pl-[5px]">
                 {nbreComment}
