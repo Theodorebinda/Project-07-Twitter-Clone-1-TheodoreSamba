@@ -1,11 +1,11 @@
-import ProfileUser from "../components/Profile/ProfileUser";
+import ProfileFollowers from "../components/Profile/ProfileFollowers";
 
 
 function Profil(){
     return(
 
     <main className="timeline">
-        <ProfileUser />
+        <ProfileFollowers />
     </main>
         
     )

@@ -1,0 +1,180 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "author": "CNN",
+      "isCertified": "../src/icones/icones/Group.png",
+      "autorDetails": "@CNN",
+      "tweetAvatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818124/Mes%20images%20Twetter/nxlbhmsf9zvbl7nwf3b7.png",
+      "couvertureImage" : "https://pbs.twimg.com/profile_banners/759251/1689257013/1500x500",
+      "description" :"It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRKand download our app http://cnn.com/apps",
+      "site": "cnn.com",
+      "isLogin" : false,
+      "abonnement": 100,
+      "abonne": 950
+    },
+    {
+      "id": 2,
+      "author": "The New York Times",
+      "isCertified": "../src/icones/icones/Group.png",
+      "autorDetails": "@nytimes",
+      "tweetAvatar":"../src/images/Tweet-Profile-Photo.svg",
+      "couvertureImage" : "src/images/newyorkTimesCouv.jpeg",
+      "description" :"",
+      "isLogin" : false,
+      "abonnement": 100,
+      "abonne": 950
+    },
+    {
+      "id": 3,
+      "author": "Twitter",
+      "isCertified": "../src/icones/icones/Group.png" ,
+      "autorDetails": "@twitter",
+      "tweetAvatar":"../src/images/image 1.png",
+      "image": null,
+      "couvertureImage" : "C:/Users/congo/github-classroom/kadea-academy-learners/twitter-clone-c3-Theodorebinda/src/images/xCouv.jpeg",
+      "description" :"",
+      "isLogin" : false,
+      "abonnement": 100,
+      "abonne": 950
+    },
+    {
+      "id": 4,
+      "author": "KadeaAcademy",
+      "isCertified": false,
+      "autorDetails": "@Kda243",
+      "tweetAvatar": "https://pbs.twimg.com/profile_images/1651557676583735299/epBvdEg5_400x400.jpg",
+      "couvertureImage" : "https://pbs.twimg.com/profile_banners/1368913663869001728/1683102514/1500x500",
+      "description" :"Académie de développeurs web & mobile et spécialistes en marketing digital",
+      "isLogin" : false,
+      "abonnement": 100,
+      "abonne": 950
+    },
+    {
+      "id":5,
+      "author":  "Bradley Ortiz",
+      "isCertified": false,
+      "autorDetails": "@bradley",
+      "tweetAvatar": "src/images/profile-photo.png",
+      "couvertureImage" : "src/images/1500x500.jpg",
+      "description" :"",
+      "isLogin" : true,
+      "abonnement": 100,
+      "abonne": 950
+    }
+  ],
+  "tweets": [
+    {
+      "tweetId": 1,
+      "userId": 1,
+      "times": "  7m",
+      "text": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis",
+      "image": null,
+      "actions":
+          {
+            "nbreComment": 123,
+            "nbreRetweet": 234, 
+            "nbreReaction": 315,
+            "labelShare": "share"
+          }
+    },
+    {
+      "tweetId": 2,
+      "userId":2,
+      "times": "  2h",
+      "text": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis",
+      "image": "../src/images/tweet-image.png",
+      "actions":
+      {
+        "nbreComment": 567,
+        "nbreRetweet": 256, 
+        "nbreReaction": 600
+      }
+  
+    },
+    {
+      "tweetId": 3,
+      "userId":3,
+      "times": "  Oct 29",
+      "text": "BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,  ",
+      "image": null,
+      "actions":
+      {
+        "nbreComment": 89,
+        "nbreRetweet": 208, 
+        "nbreReaction": 900
+      }
+  
+    },
+    {
+      "tweetId": 4,
+      "userId": 3,
+      "times": "  Oct 29",
+      "text": "hello literally everyone hello literally everyonehello literally everyonehello literally everyonehello literally everyone",
+      "image": null,
+      "actions":
+      {
+        "nbreComment": 589,
+        "nbreRetweet": 590, 
+        "nbreReaction": 890
+      }
+  
+    },
+    {
+      "tweetId": 5,
+      "userId": 4,
+      "times": " 22 jan 2023",
+      "text": "Atelier d'initiation au codage informatique #Resicodi🤝 #Kda243",
+      "image": "https://pbs.twimg.com/media/Fm748r3WAAE9Svc?format=png&name=large",
+      "actions":
+  
+      {
+        "nbreComment": 17,
+        "nbreRetweet": 7, 
+        "nbreReaction": 90
+      }
+  
+    },
+    {
+      "tweetId":6,
+      "userId":4,
+      "times": " 22 juil 2022",
+      "text": "Atelier d'initiation au codage informatique #Resicodi🤝 #Kda243",
+      "image": "https://pbs.twimg.com/media/FX9izDQWIAAN2Ra?format=jpg&name=large",
+      "link": "https://www.kadea.academy/",
+      "actions":
+          {
+          "nbreComment": 123,
+          "nbreRetweet": 234, 
+          "nbreReaction": 315
+          }
+    },
+    {
+      "tweetId":7,
+      "userId":1,
+      "times": " 22 juil 2022",
+      "text": "Donald Trump's favored candidate to lead the RNC promoted his false election claims and repeatedly said Democratic cities engaged in 'massive fraud'",
+      "link": " https://cnn.it/48b0Zn9",
+      "image": "",
+      "actions":
+          {
+          "nbreComment": 123,
+          "nbreRetweet": 234, 
+          "nbreReaction": 315
+          }
+    },
+    {
+      "tweetId":8,
+      "userId":1,
+      "times": " 22 jan 2024",
+      "text": "Israeli Prime Minister Benjamin Netanyahu rejects an offer from Hamas for a ceasefire in Gaza, insisting that Israel's goal of 'complete victory' is within reachAtelier d'initiation au codage informatique #Resicodi🤝 #Kda243",
+      "image": "https://pbs.twimg.com/card_img/1754022984874967040/vs_qTL15?format=jpg&name=900x900",
+      "actions":
+          {
+          "nbreComment": 123,
+          "nbreRetweet": 234, 
+          "nbreReaction": 315
+          }
+    }
+  ]
+}

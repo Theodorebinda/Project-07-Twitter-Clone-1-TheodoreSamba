@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
-import users from "../utiles/tweet"
 import { RiLock2Fill } from "react-icons/ri";
+import { useContext } from "react";
+import { Consumer } from "./Consumer";
 
 
 function SidbarBottom (){
-   const profilUser = users.find(user => user.isLogin == true)
+   const {dataValue} = useContext(Consumer)
+   const profilUser = dataValue.users.find(user => user.isLogin == true)
+   console.log(profilUser);
     return (
-         <Link to="/profil"  className="flex p[8px] items-start pt[60px] mt-[70px]">
+         <Link to={`/profil/${profilUser.autorDetails}`}  className="flex p[8px] items-start pt[60px] mt-[70px]">
            <img className="w-[40px] h-[40px] shrink-0" src={profilUser.tweetAvatar} alt="" />
            <div className="flex-col ">
             <div className="flex">

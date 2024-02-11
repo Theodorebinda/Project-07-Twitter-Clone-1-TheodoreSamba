@@ -1,7 +1,9 @@
-import users from "../utiles/tweet"
+import { useContext } from "react"
+import { Consumer } from "./Consumer"
 // composant qui gere le profil d'utilisateur dans le tweet editor
 function Profile(){
-  const profilUser = users.find(user => user.isLogin == true )
+  const context = useContext(Consumer)
+  const profilUser = context.dataValue.users.find(user => user.isLogin == true )
 
     return (
       <>

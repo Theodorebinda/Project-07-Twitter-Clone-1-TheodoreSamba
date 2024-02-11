@@ -1,22 +1,25 @@
 import { Link } from "react-router-dom";
-import tweets from "../utiles/tweet";
 import Button from "./Button";
+import { useContext } from "react";
+import { Consumer } from "./Consumer";
 
 function FollowingLabel() {
+  const  {dataValue}= useContext(Consumer)
+
   return (
     <div className="follow">
       <h4 className="follow-title">Who to follow</h4>
       <div>
-        {tweets.slice(0, 3).map((tweet, index) => (
+        {dataValue.users.slice(0, 3).map((tweet, index) => (
           <div key={index} className="follow-content">
-            <Link to={`/profil/${tweet.author}`}>
+            <Link to={`/profil/${tweet.autorDetails}`}>
             <div>
               <img className="follow-avatar" src={tweet.tweetAvatar} alt="" />
             </div>
             </Link>
             <div className="label-contenair">
               <div className="detail-contenair">
-                <Link to={`/profil/${tweet.author}`} >
+                <Link to={`/profil/${tweet.autorDetails}`} >
                 <div className="follow-label">
                   <p className="follow-title-author">
                     {tweet.author}

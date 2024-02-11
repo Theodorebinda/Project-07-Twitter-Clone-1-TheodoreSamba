@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import Button from "./Button";
 import { Consumer } from "./Consumer";
-import tweets from "../utiles/tweet";
 
 // composant qui gere le btn Tweet
 function TweetButon(){
@@ -13,7 +12,7 @@ function TweetButon(){
     return (
       <>
          <Button  className="capitalize py-3 px-6 border-none rounded-full bg-blue-400 text-base"  label="Tweet"  onClick={(e) => {
-              e.preventDefault(); addClick(); console.log(tweets);
+              e.preventDefault(); addClick();
             }}/>
       </>
     ) 
