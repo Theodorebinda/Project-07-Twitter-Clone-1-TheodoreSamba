@@ -4,13 +4,13 @@ import { useContext } from "react";
 import { Consumer } from "./Consumer";
 
 function FollowingLabel() {
-  const  {dataValue}= useContext(Consumer)
-
+  const  {dataUsers}= useContext(Consumer);
+  
   return (
     <div className="follow">
       <h4 className="follow-title">Who to follow</h4>
       <div>
-        {dataValue.users.slice(0, 3).map((tweet, index) => (
+        {dataUsers?.slice(0, 3).map((tweet, index) => (
           <div key={index} className="follow-content">
             <Link to={`/profil/${tweet.autorDetails}`}>
             <div>

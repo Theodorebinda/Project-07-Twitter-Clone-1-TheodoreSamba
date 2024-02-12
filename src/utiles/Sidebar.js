@@ -51,7 +51,7 @@ const sidebars = [
     {
         name:"Profil",
         icone:user,
-        link: "/profil"
+        link: ""
 
     },
     {

@@ -1,15 +1,50 @@
 import React, { useContext } from 'react';
 import { Consumer } from './Consumer';
+import { useForm } from 'react-hook-form';
+import TweetEditorButton from './Tweet-editor-button';
 // Composant qui gere l'entre du tweet de l'utilisateur
 function TweetEditorInput(){
-  const {inputValue, setInputValue} = useContext(Consumer)
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-};
+  const {dataValue} = useContext(Consumer)
+  const {addTweet} = useContext(Consumer)
+  const {dataUsers} = useContext(Consumer)
+
+
+const {
+  register,
+  handleSubmit,
+  formState: { errors },
+} = useForm();
+
+
+const oneUser = dataUsers?.find((user) => {
+  return user.isLogin === true
+})
+const handelCreateTweet  = (data)=>{
+  
+    const createTweet = {
+      tweetId: dataValue.length +1,
+      userId : oneUser.id,
+      times: new Date().toISOString(),
+      text: data.text,
+      image: null,
+      actions:
+          {
+          nbreComment: 123,
+          nbreRetweet: 234, 
+          nbreReaction: 315,
+          }
+
+    }
+    addTweet(createTweet)
+    
+}
 
   return (
     < >
-      <input className="h-[60px] w-full border-none outline-none text-xl bg-black text-white resize-none pt-[10px] marg my-0" value={inputValue} type="text" placeholder="What's happining"  onChange={handleInputChange}></input>
+    <form onSubmit={handleSubmit((data) => {handelCreateTweet(data)})}>
+      <input {...register("text")} className="h-[60px] w-full border-none outline-none text-xl bg-black text-white resize-none pt-[10px] marg my-0"  type="text" placeholder="What's happining"></input>
+      <TweetEditorButton />
+    </form>
     </>
   )
 }

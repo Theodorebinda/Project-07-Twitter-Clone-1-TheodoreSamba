@@ -9,25 +9,26 @@ import { FiShare } from "react-icons/fi";
 // import TweetAction from "./tweetAction";
 
 function Tweets() {
-  const context =useContext(Consumer)
+  const {dataValue} =useContext(Consumer)
+  const {dataUsers} =useContext(Consumer)
   const [nbreComment, setNbreComment] = useState(0);
 
   const handleClick = (e) => {
    
     if(nbreComment==0){
       setNbreComment(nbreComment + 1);
-    }else{
+    }else if (nbreComment==1){
       setNbreComment(nbreComment - 1);
 
     }
   }
   function getTweetAuthor (userId) {
-  const user = context.dataValue.users.find(user => user.id === userId);
+  const user = dataUsers?.find(user => user.id === userId);
     return user
   }
   // console.log(user);
 // console.log(context.dataValue.users);
-  const tweetsElement = context.dataValue.tweets.map((tweet, index) => (
+  const tweetsElement = dataValue?.map((tweet, index) => (
     
     tweet.text.trim() !=="" && tweet.image !== false?(
     <div key={index} className="flex justify-start items-start gap-[20px] py-6 px-4 border-solid border-b-[1px] border-b-gray-700 ">
@@ -51,25 +52,33 @@ function Tweets() {
           {/* TweetActions */}
           <div className="flex justify-center items-center gap-[5rem] text-base ">
               <button className="bg-transparent border-none flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue">
-                <FaRegComment />
+                <span className="hover:bg-blue-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
+                 <FaRegComment /> 
+                </span>
                 <div className="pl-[5px]">
                   {tweet.actions.nbreComment}
                 </div>
               </button>
               <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren" onClick={() => {handleClick()}}>
+                <span className="hover:bg-green-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
                 <FaRetweet />
+                </span>
                 <div className="pl-[5px]">
                    {nbreComment}
                 </div>
               </button>
               <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-red" onClick={() => {handleClick()}}>
-                <IoHeartOutline />
+                <span className="hover:bg-red-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
+                 <IoHeartOutline />
+                </span>
                 <div className="pl-[5px]">
                 {nbreComment}
                 </div>
               </button>
               <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue" >
+                <span className="hover:bg-blue-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
                 <FiShare />
+                </span>
               </button>
           </div>
           

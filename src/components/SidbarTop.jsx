@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
 import sidebars from "../utiles/Sidebar";
 import Button from "./Button";
+import { useContext } from "react";
+import { Consumer } from "./Consumer";
 
 // fonction qui gere la navigation dans sidebar
 function SidebarTop(){
-    const navSidebar = sidebars.map((sidebar, index) => (
+    const {dataValue, dataUsers} = useContext(Consumer);
+    
+    const profilUser = dataUsers?.find(user => user.isLogin == true);
+
+    const navSidebar = sidebars?.map((sidebar, index) => (
         <li key={index}>
-            <Link to={sidebar.link}>
+            <Link to={sidebar.link !== ""? sidebar.link: `/profil/${profilUser?.autorDetails}`}>
                 <span  className="flex items-start gap-[8px]" href="">
                 <img src={sidebar.icone} alt="" />
                 <p>{sidebar.name}</p>

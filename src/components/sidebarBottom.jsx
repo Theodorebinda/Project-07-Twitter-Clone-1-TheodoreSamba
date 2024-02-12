@@ -5,22 +5,23 @@ import { Consumer } from "./Consumer";
 
 
 function SidbarBottom (){
-   const {dataValue} = useContext(Consumer)
-   const profilUser = dataValue.users.find(user => user.isLogin == true)
-   console.log(profilUser);
+   const {dataUsers} = useContext(Consumer)
+   
+   const profilUser = dataUsers?.find(user => user.isLogin == true);
+
     return (
-         <Link to={`/profil/${profilUser.autorDetails}`}  className="flex p[8px] items-start pt[60px] mt-[70px]">
-           <img className="w-[40px] h-[40px] shrink-0" src={profilUser.tweetAvatar} alt="" />
+         <Link to={`/profil/${profilUser?.autorDetails}`}  className="flex p[8px] items-start pt[60px] mt-[70px]">
+           <img className="w-[40px] h-[40px] shrink-0" src={profilUser?.tweetAvatar} alt="" />
            <div className="flex-col ">
             <div className="flex">
               <h4 >
-               {profilUser.author}
+               {profilUser?.author}
               </h4> 
                <span className="pt-[4px] pl-[4px]" href="#">
                   < RiLock2Fill />
                </span>
             </div>
-              <p className="sidebar-title-details">{profilUser.autorDetails}</p>
+              <p className="sidebar-title-details">{profilUser?.autorDetails}</p>
            </div>
            </Link>
 )}

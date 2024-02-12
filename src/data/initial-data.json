@@ -10,8 +10,8 @@
       "description" :"It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRKand download our app http://cnn.com/apps",
       "site": "cnn.com",
       "isLogin" : false,
-      "abonnement": 100,
-      "abonne": 950
+      "abonnement": 278,
+      "abonne": 12900
     },
     {
       "id": 2,
@@ -19,11 +19,11 @@
       "isCertified": "../src/icones/icones/Group.png",
       "autorDetails": "@nytimes",
       "tweetAvatar":"../src/images/Tweet-Profile-Photo.svg",
-      "couvertureImage" : "src/images/newyorkTimesCouv.jpeg",
+      "couvertureImage" : "../src/images/newyorkTimesCouv.jpeg",
       "description" :"",
       "isLogin" : false,
       "abonnement": 100,
-      "abonne": 950
+      "abonne": 9500
     },
     {
       "id": 3,
@@ -31,11 +31,10 @@
       "isCertified": "../src/icones/icones/Group.png" ,
       "autorDetails": "@twitter",
       "tweetAvatar":"../src/images/image 1.png",
-      "image": null,
-      "couvertureImage" : "C:/Users/congo/github-classroom/kadea-academy-learners/twitter-clone-c3-Theodorebinda/src/images/xCouv.jpeg",
+      "couvertureImage" : "../src/images/xCouv.jpeg",
       "description" :"",
       "isLogin" : false,
-      "abonnement": 100,
+      "abonnement": 10,
       "abonne": 950
     },
     {
@@ -47,20 +46,21 @@
       "couvertureImage" : "https://pbs.twimg.com/profile_banners/1368913663869001728/1683102514/1500x500",
       "description" :"Académie de développeurs web & mobile et spécialistes en marketing digital",
       "isLogin" : false,
-      "abonnement": 100,
-      "abonne": 950
+      "abonnement": 50,
+      "abonne": 900
     },
     {
       "id":5,
       "author":  "Bradley Ortiz",
-      "isCertified": false,
+      "isCertified": "",
       "autorDetails": "@bradley",
-      "tweetAvatar": "src/images/profile-photo.png",
-      "couvertureImage" : "src/images/1500x500.jpg",
-      "description" :"",
+      "tweetAvatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818125/Mes%20images%20Twetter/joojhecwas4fcy1470tw.png",
+      "couvertureImage" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWwRVMjrjyH4FEZywmJhjVAnA19fUb0wzAsQ&usqp=CAU",
+      "description" :"Developpeur Full-Stack",
+      "site": "https://twitter.com/Theodoresage1",
       "isLogin" : true,
-      "abonnement": 100,
-      "abonne": 950
+      "abonnement": 800,
+      "abonne": 897
     }
   ],
   "tweets": [
@@ -69,13 +69,12 @@
       "userId": 1,
       "times": "  7m",
       "text": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis",
-      "image": null,
+      "image":"",
       "actions":
           {
             "nbreComment": 123,
             "nbreRetweet": 234, 
-            "nbreReaction": 315,
-            "labelShare": "share"
+            "nbreReaction": 315
           }
     },
     {
@@ -97,7 +96,7 @@
       "userId":3,
       "times": "  Oct 29",
       "text": "BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,BIG New lol jk still Twitter,  ",
-      "image": null,
+      "image":"",
       "actions":
       {
         "nbreComment": 89,
@@ -111,7 +110,7 @@
       "userId": 3,
       "times": "  Oct 29",
       "text": "hello literally everyone hello literally everyonehello literally everyonehello literally everyonehello literally everyone",
-      "image": null,
+      "image":"",
       "actions":
       {
         "nbreComment": 589,
@@ -175,6 +174,6 @@
           "nbreRetweet": 234, 
           "nbreReaction": 315
           }
-    }
+      }
   ]
 }
