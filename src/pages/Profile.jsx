@@ -1,13 +1,10 @@
 import ProfileFollowers from "../components/Profile/ProfileFollowers";
 
-
-function Profil(){
-    return(
-
+function Profil() {
+  return (
     <main className="timeline">
-        <ProfileFollowers />
+      <ProfileFollowers />
     </main>
-        
-    )
+  );
 }
-export default Profil
+export default Profil;

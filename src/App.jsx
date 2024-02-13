@@ -3,9 +3,9 @@ import Layout from "./components/layout.jsx";
 import Profil from "./pages/Profile.jsx";
 // import { Outlet } from "react-router-dom";
 
-import('./style/reset.css');
-import('./style/App.css');
-import('./style/index.css')
+import("./style/reset.css");
+import("./style/App.css");
+import("./style/index.css");
 
 export default function App() {
   return (

@@ -2,13 +2,12 @@ import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-
 export default function ProfileHeaderType(props) {
   return (
     <>
       <div className="profile-header">
         <div className="back-button">
-          <Link to="/" >
+          <Link to="/">
             <FaArrowLeft />
           </Link>
         </div>

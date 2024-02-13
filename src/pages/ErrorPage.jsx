@@ -12,8 +12,10 @@ function ErrorPage() {
       <p className="content-error">
         <i>{error.statusText || error.message}</i>
       </p>
-      <Link className="button-error" label="Clique ici">Click here</Link> 
+      <Link className="button-error" label="Clique ici">
+        Click here
+      </Link>
     </div>
   );
 }
-export default ErrorPage
+export default ErrorPage;

@@ -1,5 +1,5 @@
-import PageTitle from "../components/pageTitre"
-import TopTweet from "../icones/icones/Timeline-Prop.png"
+import PageTitle from "../components/pageTitre";
+import TopTweet from "../icones/icones/Timeline-Prop.png";
 
 // composant qui gere le Header
 function Header() {
@@ -10,7 +10,7 @@ function Header() {
         <img className="w-6" src={TopTweet} alt="" />
       </button>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
