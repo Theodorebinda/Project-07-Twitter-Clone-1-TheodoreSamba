@@ -11,8 +11,28 @@ function ContextData({ children }) {
     setDataValue([newTweet, ...dataValue]);
   };
 
+  const toggleLike = (tweetId) => {
+    const updatedTweets = dataValue.map((tweet) => {
+      if (tweet.tweetId === tweetId) {
+        const newLikeCount = tweet.isLikeTweet
+          ? tweet.actions.nbreReaction - 1
+          : tweet.actions.nbreReaction + 1;
+        return {
+          ...tweet,
+          actions: {
+            ...tweet.actions,
+            nbreReaction: newLikeCount,
+          },
+          isLikeTweet: !tweet.isLikeTweet,
+        };
+      }
+      return tweet;
+    });
+    setDataValue(updatedTweets);
+  };
+
   return (
-    <Consumer.Provider value={{ dataValue, addTweet, dataUsers }}>
+    <Consumer.Provider value={{ dataValue, addTweet, dataUsers, toggleLike }}>
       {children}
     </Consumer.Provider>
   );

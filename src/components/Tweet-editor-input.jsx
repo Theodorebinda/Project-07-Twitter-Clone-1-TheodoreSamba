@@ -25,9 +25,9 @@ function TweetEditorInput() {
       text: data.text,
       image: null,
       actions: {
-        nbreComment: 123,
-        nbreRetweet: 234,
-        nbreReaction: 315,
+        nbreComment: 0,
+        nbreRetweet: 0,
+        nbreReaction: 0,
       },
     };
     addTweet(createTweet);

@@ -5,13 +5,21 @@ import { IoHeartOutline } from "react-icons/io5";
 import { FiShare } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { Consumer } from "./Consumer";
+import LikeTweet from "./LikeTweet";
 
 function Tweet({ tweet }) {
   const [nbreComment, setNbreComment] = useState(0);
-
+  const [nbreLike, setNbreLike] = useState(0);
   const { dataUsers } = useContext(Consumer);
 
-  const handleClick = (e) => {
+  const handleLike = (e) => {
+    if (nbreLike == 0) {
+      setNbreLike(nbreLike + 1);
+    } else if (nbreLike == 1) {
+      setNbreLike(nbreLike - 1);
+    }
+  };
+  const handleComment = (e) => {
     if (nbreComment == 0) {
       setNbreComment(nbreComment + 1);
     } else if (nbreComment == 1) {
@@ -92,7 +100,7 @@ function Tweet({ tweet }) {
             <button
               className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren"
               onClick={() => {
-                handleClick();
+                handleComment();
               }}
             >
               <span className="hover:bg-green-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
@@ -100,17 +108,11 @@ function Tweet({ tweet }) {
               </span>
               <div className="pl-[5px]">{nbreComment}</div>
             </button>
-            <button
-              className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-red"
-              onClick={() => {
-                handleClick();
-              }}
-            >
-              <span className="hover:bg-red-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
-                <IoHeartOutline />
-              </span>
-              <div className="pl-[5px]">{nbreComment}</div>
-            </button>
+            <LikeTweet
+              number={tweet.actions.nbreReaction}
+              isLikeTweet={tweet.isLikeTweet}
+              id={tweet.tweetId}
+            />
             <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue">
               <span className="hover:bg-blue-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
                 <FiShare />

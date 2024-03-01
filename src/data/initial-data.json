@@ -75,7 +75,8 @@
             "nbreComment": 123,
             "nbreRetweet": 234, 
             "nbreReaction": 315
-          }
+          },
+          "isLikeTweet":false
     },
     {
       "tweetId": 2,
@@ -88,7 +89,8 @@
         "nbreComment": 567,
         "nbreRetweet": 256, 
         "nbreReaction": 600
-      }
+      },
+      "isLikeTweet":false
   
     },
     {
@@ -102,7 +104,8 @@
         "nbreComment": 89,
         "nbreRetweet": 208, 
         "nbreReaction": 900
-      }
+      },
+      "isLikeTweet":false
   
     },
     {
@@ -116,7 +119,8 @@
         "nbreComment": 589,
         "nbreRetweet": 590, 
         "nbreReaction": 890
-      }
+      },
+      "isLikeTweet":false
   
     },
     {
@@ -131,7 +135,8 @@
         "nbreComment": 17,
         "nbreRetweet": 7, 
         "nbreReaction": 90
-      }
+      },
+      "isLikeTweet":false
   
     },
     {
@@ -143,10 +148,11 @@
       "link": "https://www.kadea.academy/",
       "actions":
           {
-          "nbreComment": 123,
+          "nbreComment": 0,
           "nbreRetweet": 234, 
           "nbreReaction": 315
-          }
+          },
+          "isLikeTweet":false
     },
     {
       "tweetId":7,
@@ -160,7 +166,8 @@
           "nbreComment": 123,
           "nbreRetweet": 234, 
           "nbreReaction": 315
-          }
+          },
+          "isLikeTweet":false
     },
     {
       "tweetId":8,
@@ -173,7 +180,8 @@
           "nbreComment": 123,
           "nbreRetweet": 234, 
           "nbreReaction": 315
-          }
+          },
+          "isLikeTweet":false
       }
   ]
 }
