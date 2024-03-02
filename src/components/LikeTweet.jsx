@@ -15,10 +15,14 @@ export default function LikeTweet({ number, isLikeTweet, id }) {
       onClick={handelClick}
     >
       <span className="hover:bg-red-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
-        <IoHeartOutline />
+        {isLikeTweet ? (
+          <IoHeartOutline className=" text-red-500" />
+        ) : (
+          <IoHeartOutline />
+        )}
       </span>
       {isLikeTweet ? (
-        <div className="pl-[5px] text-orange-600">{number}</div>
+        <div className="pl-[5px] text-red-500">{number}</div>
       ) : (
         <div className="pl-[5px]">{number}</div>
       )}
