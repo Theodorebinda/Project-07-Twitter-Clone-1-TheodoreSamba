@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "json-server": "json-server --watch src/data/initial-data.json --port 3000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.7",
+    "json": "^11.0.0",
     "react-hook-form": "^7.50.1",
     "react-icons": "^4.12.0",
     "react-javascript": "file:",

@@ -1,17 +1,34 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import Data from "../data/initial-data.json";
+import axios from "axios";
 
 export const Consumer = createContext();
 
 function ContextData({ children }) {
-  const [dataValue, setDataValue] = useState(Data.tweets);
+  const [dataValue, setDataValue] = useState([]);
   const [dataUsers, setDataUsers] = useState(Data.users);
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/tweets").then((response) => {
+      setDataValue(response.data);
+      console.log(response.data);
+    });
+  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:3000/users").then((response) => {
+  //     setDataValue(response.data);
+  //     console.log(response.data);
+  //   });
+  // }, []);
 
   const addTweet = (newTweet) => {
     setDataValue([newTweet, ...dataValue]);
+    axios
+      .post("http://localhost:3000/tweets", newTweet)
+      .then((response) => setDataValue([response.data, ...newTweet]));
   };
 
-  const toggleLike = (tweetId) => {
+  const toggleLike = async (tweetId) => {
     const updatedTweets = dataValue.map((tweet) => {
       if (tweet.tweetId === tweetId) {
         const newLikeCount = tweet.isLikeTweet
