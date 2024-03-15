@@ -27,7 +27,8 @@ function Tweet({ tweet }) {
     }
   };
   function getTweetAuthor(userId) {
-    const user = dataUsers?.find((user) => user.id === userId);
+    const user = dataUsers.find((user) => user.id === userId);
+
     return user;
   }
 

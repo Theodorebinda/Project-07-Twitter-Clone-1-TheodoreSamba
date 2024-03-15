@@ -11,6 +11,7 @@ function TweetEditorInput() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -23,7 +24,7 @@ function TweetEditorInput() {
       userId: oneUser.id,
       times: new Date().toISOString(),
       text: data.text,
-      image: null,
+      image: data.image,
       actions: {
         nbreComment: 0,
         nbreRetweet: 0,
@@ -37,6 +38,7 @@ function TweetEditorInput() {
     <>
       <form
         onSubmit={handleSubmit((data) => {
+          console.log(data);
           handelCreateTweet(data);
         })}
       >
