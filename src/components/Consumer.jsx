@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import Data from "../data/initial-data.json";
 import axios from "axios";
 
 export const Consumer = createContext();
@@ -9,13 +8,13 @@ function ContextData({ children }) {
   const [dataUsers, setDataUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/tweets").then((response) => {
+    axios.get("http://localhost:3001/tweets").then((response) => {
       setDataValue(response.data);
       console.log(response.data);
     });
   }, []);
   useEffect(() => {
-    axios.get("http://localhost:3000/users").then((response) => {
+    axios.get("http://localhost:3001/users").then((response) => {
       setDataUsers(response.data);
       console.log(response.data);
     });
@@ -23,7 +22,7 @@ function ContextData({ children }) {
 
   const addTweet = async (newTweet) => {
     await axios
-      .post("http://localhost:3000/tweets", newTweet)
+      .post("http://localhost:3001/tweets", newTweet)
       .then((response) => setDataValue([newTweet, ...dataValue]));
   };
 

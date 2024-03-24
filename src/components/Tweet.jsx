@@ -12,13 +12,13 @@ function Tweet({ tweet }) {
   const [nbreLike, setNbreLike] = useState(0);
   const { dataUsers } = useContext(Consumer);
 
-  const handleLike = (e) => {
-    if (nbreLike == 0) {
-      setNbreLike(nbreLike + 1);
-    } else if (nbreLike == 1) {
-      setNbreLike(nbreLike - 1);
-    }
-  };
+  // const handleLike = (e) => {
+  //   if (nbreLike == 0) {
+  //     setNbreLike(nbreLike + 1);
+  //   } else if (nbreLike == 1) {
+  //     setNbreLike(nbreLike - 1);
+  //   }
+  // };
   const handleComment = (e) => {
     if (nbreComment == 0) {
       setNbreComment(nbreComment + 1);
@@ -26,8 +26,8 @@ function Tweet({ tweet }) {
       setNbreComment(nbreComment - 1);
     }
   };
-  function getTweetAuthor(userId) {
-    const user = dataUsers.find((user) => user.id === userId);
+  function getTweetAuthor(author) {
+    const user = dataUsers.find((user) => user.id === author);
 
     return user;
   }
@@ -35,38 +35,38 @@ function Tweet({ tweet }) {
   return (
     <div className="flex justify-start items-start gap-[20px] py-6 px-4 border-solid border-b-[1px] border-b-gray-700 ">
       <Link
-        to={`/profil/${getTweetAuthor(tweet.userId).autorDetails}`}
+        to={`/profil/${getTweetAuthor(tweet.id)?.handle}`}
         className="h-[70px] flex-auto w-[70px]"
       >
         <img
           className="max-w-full max-h-full rounded-full"
-          src={getTweetAuthor(tweet.userId).tweetAvatar}
+          src={getTweetAuthor(tweet.id)?.profilePicture}
           alt=""
         />
       </Link>
       <div className="flex flex-col items-start justify-start gap-[30px] w-full  ">
         <div className="flex flex-col ">
           <Link
-            to={`/profil/${getTweetAuthor(tweet.userId).autorDetails}`}
+            to={`/profil/${getTweetAuthor(tweet.id)?.handle}`}
             className="flex justify-start items-start gap-[10px] text-base"
           >
             <h4>
               <span className="text-base text no-underline text-white" href="#">
-                {getTweetAuthor(tweet.userId).author}
+                {getTweetAuthor(tweet.id)?.name}
               </span>
             </h4>
             <img
               src={
-                getTweetAuthor(tweet.userId).isCertified
-                  ? getTweetAuthor(tweet.userId).isCertified
+                getTweetAuthor(tweet.id)?.isCertified
+                  ? getTweetAuthor(tweet.id)?.isCertified
                   : null
               }
               alt=""
             />
             <p>
               <span className="text-gray-600 no-underline" href="#">
-                {getTweetAuthor(tweet.userId).autorDetails}
-                {tweet.times}
+                {getTweetAuthor(tweet.id)?.handle}
+                {tweet.createdAt}
               </span>
             </p>
           </Link>
@@ -82,10 +82,10 @@ function Tweet({ tweet }) {
             </a>
           </div>
           <div className="w-full px-0 pb-2 pt-1 ">
-            <Link to={tweet.image} target="_blank">
+            <Link to={tweet.media} target="_blank">
               <img
                 className="max-w-full h-auto  rounded-[50px]"
-                src={tweet.image ? tweet.image : null}
+                src={tweet.media ? tweet.media : null}
                 alt=""
               />
             </Link>
@@ -96,7 +96,7 @@ function Tweet({ tweet }) {
               <span className="hover:bg-blue-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
                 <FaRegComment />
               </span>
-              <div className="pl-[5px]">{tweet.actions.nbreComment}</div>
+              <div className="pl-[5px]">{tweet.repliesCount}</div>
             </button>
             <button
               className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-gren"
@@ -107,12 +107,12 @@ function Tweet({ tweet }) {
               <span className="hover:bg-green-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">
                 <FaRetweet />
               </span>
-              <div className="pl-[5px]">{nbreComment}</div>
+              <div className="pl-[5px]">{tweet.retweetCount}</div>
             </button>
             <LikeTweet
-              number={tweet.actions.nbreReaction}
+              number={tweet.favoriteCount}
               isLikeTweet={tweet.isLikeTweet}
-              id={tweet.tweetId}
+              id={tweet.id}
             />
             <button className="button-tranparent flex items-center text-gray-500 cursor-pointer transition-all rounded-full action-hover-blue">
               <span className="hover:bg-blue-300 opacity-50 w-[30px] h-[30px] flex justify-center items-center rounded-full">

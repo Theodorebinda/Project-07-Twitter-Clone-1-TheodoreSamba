@@ -4,7 +4,7 @@ import Tweet from "./Tweet";
 
 function Tweets() {
   const { dataValue } = useContext(Consumer);
-  const sortedTweets = dataValue?.slice().sort((a, b) => {
+  const sortedTweets = dataValue?.sort((a, b) => {
     const dateA = new Date(a.times);
     const dateB = new Date(b.times);
     return dateB - dateA;
